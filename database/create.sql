@@ -48,3 +48,13 @@ CREATE TABLE `Macro` (
     FOREIGN KEY(UserId)
         REFERENCES `User`(`Id`)
 );
+
+CREATE TABLE `Performance` (
+    Id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    UserId INT NOT NULL,
+    DateRecorded DATE NOT NULL,
+    Result JSON NOT NULL,
+
+    FOREIGN KEY(UserId)
+        REFERENCES `User`(`Id`)
+);
