@@ -30,7 +30,21 @@ CREATE TABLE `Measurement` (
     BMI FLOAT NULL,
     BodyFatPercentage FLOAT NULL,
 
-    CONSTRAINT fk_User
-        FOREIGN KEY(UserId)
+    FOREIGN KEY(UserId)
+        REFERENCES `User`(`Id`)
+);
+
+CREATE TABLE `Macro` (
+    Id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    UserId INT NOT NULL,
+    DateRecorded DATE NOT NULL,
+    TotalCalories FLOAT NULL,
+    Protein FLOAT NULL,
+    Carbohydrates FLOAT NULL,
+    Fat FLOAT NULL,
+    Sugar FLOAT NULL,
+    Fiber FLOAT NULL,
+
+    FOREIGN KEY(UserId)
         REFERENCES `User`(`Id`)
 );
