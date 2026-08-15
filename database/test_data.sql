@@ -42,3 +42,40 @@ VALUES
 (23, 5, '2026-06-10', 190.5, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (24, 5, '2026-07-10', 187.1, NULL, NULL, NULL, NULL, NULL, NULL, 38.2, NULL, NULL, NULL, NULL, NULL, NULL),
 (25, 5, '2026-08-10', 183.8, NULL, NULL, NULL, NULL, NULL, NULL, 37.5, NULL, NULL, NULL, NULL, NULL, NULL);
+
+INSERT INTO Macro (Id, UserId, DateRecorded, TotalCalories, Protein, Carbohydrates, Fat, Sugar, Fiber)
+VALUES 
+-- User 1: tracks everything
+(1, 1, '2026-04-01', 2100, 165, 220, 65, 48, 24),
+(2, 1, '2026-05-01', 2150, 170, 225, 66, 50, 25),
+(3, 1, '2026-06-01', 2200, 175, 230, 68, 47, 26),
+(4, 1, '2026-07-01', 2250, 180, 235, 70, 45, 27),
+(5, 1, '2026-08-01', 2300, 185, 240, 72, 44, 28),
+
+-- User 2: only cares about total calories
+(6, 2, '2026-04-03', 1800, NULL, NULL, NULL, NULL, NULL),
+(7, 2, '2026-05-03', 1850, NULL, NULL, NULL, NULL, NULL),
+(8, 2, '2026-06-03', 1900, NULL, NULL, NULL, NULL, NULL),
+(9, 2, '2026-07-03', 1950, NULL, NULL, NULL, NULL, NULL),
+(10, 2, '2026-08-03', 2000, NULL, NULL, NULL, NULL, NULL),
+
+-- User 3: tracks calories and main macros
+(11, 3, '2026-04-05', 2500, 190, 275, 75, NULL, NULL),
+(12, 3, '2026-05-05', 2450, 185, 270, 73, NULL, NULL),
+(13, 3, '2026-06-05', 2400, 180, 260, 72, NULL, NULL),
+(14, 3, '2026-07-05', 2350, 180, 250, 70, NULL, NULL),
+(15, 3, '2026-08-05', 2300, 175, 245, 68, NULL, NULL),
+
+-- User 4: mixed / inconsistent tracking
+(16, 4, '2026-04-07', 2000, 150, NULL, 60, NULL, NULL),
+(17, 4, '2026-05-07', 2050, 155, 215, NULL, NULL, NULL),
+(18, 4, '2026-06-07', 2100, 160, 220, 65, 40, NULL),
+(19, 4, '2026-07-07', 2150, 165, 225, 67, NULL, 20),
+(20, 4, '2026-08-07', 2200, 170, 230, 70, 42, 22),
+
+-- User 5: mainly cares about protein, carbs, fat, and calories
+(21, 5, '2026-04-10', 1900, 145, 190, 62, NULL, NULL),
+(22, 5, '2026-05-10', 1950, 150, 195, 63, NULL, NULL),
+(23, 5, '2026-06-10', 2000, 155, 200, 65, NULL, NULL),
+(24, 5, '2026-07-10', 2050, 160, 205, 66, NULL, NULL),
+(25, 5, '2026-08-10', 2100, 165, 210, 68, NULL, NULL);
