@@ -58,3 +58,16 @@ CREATE TABLE `Performance` (
     FOREIGN KEY(UserId)
         REFERENCES `User`(`Id`)
 );
+
+CREATE TABLE `Exercise` (
+    Id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    Name VARCHAR(64) NOT NULL,
+    PrimaryMuscle VARCHAR(64) NULL,
+    SecondaryMuscle VARCHAR(64) NULL,
+    MuscleGroup VARCHAR(64) NULL,
+    Equipment VARCHAR(64) NULL,
+    ExerciseType VARCHAR(64) NOT NULL,
+    MovementType VARCHAR(64) NULL,
+    DemonstrationURL VARCHAR(128) NULL,
+    SourceURL VARCHAR(128) NULL
+);
