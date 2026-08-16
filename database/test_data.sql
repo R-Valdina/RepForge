@@ -79,3 +79,138 @@ VALUES
 (23, 5, '2026-06-10', 2000, 155, 200, 65, NULL, NULL),
 (24, 5, '2026-07-10', 2050, 160, 205, 66, NULL, NULL),
 (25, 5, '2026-08-10', 2100, 165, 210, 68, NULL, NULL);
+
+INSERT INTO Exercise ( Id, Name, PrimaryMuscle, SecondaryMuscle, MuscleGroup, Equipment, ExerciseType, MovementType, DemonstrationURL, SourceURL)
+VALUES
+-- UPPER BODY PUSHING
+(1, 'Incline Chest Press', 'Pectoralis Major', 'Anterior Deltoid', 'Chest', 'Plate Loaded Machine', 'Strength', 'Horizontal Push', NULL, NULL),
+(2, 'Decline Chest Press', 'Pectoralis Major', 'Triceps', 'Chest', 'Plate Loaded Machine', 'Strength', 'Horizontal Push', NULL, NULL),
+(3, 'Machine Chest Press', 'Pectoralis Major', 'Triceps', 'Chest', 'Machine', 'Strength', 'Horizontal Push', NULL, NULL),
+(4, 'Machine Shoulder Press', 'Anterior Deltoid', 'Triceps', 'Shoulders', 'Machine', 'Strength', 'Vertical Push', NULL, NULL),
+(5, 'Cable Chest Fly', 'Pectoralis Major', 'Anterior Deltoid', 'Chest', 'Cable Machine', 'Strength', 'Horizontal Adduction', NULL, NULL),
+(6, 'Cable Lateral Raise', 'Lateral Deltoid', NULL, 'Shoulders', 'Cable Machine', 'Strength', 'Shoulder Abduction', NULL, NULL),
+(7, 'Dumbbell Lateral Raise', 'Lateral Deltoid', NULL, 'Shoulders', 'Dumbbells', 'Strength', 'Shoulder Abduction', NULL, NULL),
+(8, 'Rope Triceps Pushdown', 'Triceps', NULL, 'Arms', 'Cable Machine', 'Strength', 'Elbow Extension', NULL, NULL),
+(9, 'Overhead Cable Triceps Extension', 'Triceps', NULL, 'Arms', 'Cable Machine', 'Strength', 'Elbow Extension', NULL, NULL),
+
+-- UPPER BODY PULLING
+(10, 'Lat Pulldown', 'Latissimus Dorsi', 'Biceps', 'Back', 'Cable Machine', 'Strength', 'Vertical Pull', NULL, NULL),
+(11, 'Seated Cable Row', 'Latissimus Dorsi', 'Rhomboids', 'Back', 'Cable Machine', 'Strength', 'Horizontal Pull', NULL, NULL),
+(12, 'Chest Supported Row', 'Rhomboids', 'Latissimus Dorsi', 'Back', 'Machine', 'Strength', 'Horizontal Pull', NULL, NULL),
+(13, 'Machine High Row', 'Latissimus Dorsi', 'Rhomboids', 'Back', 'Machine', 'Strength', 'Horizontal Pull', NULL, NULL),
+(14, 'Reverse Pec Deck', 'Posterior Deltoid', 'Rhomboids', 'Shoulders', 'Machine', 'Strength', 'Horizontal Abduction', NULL, NULL),
+(15, 'Face Pull', 'Posterior Deltoid', 'Trapezius', 'Shoulders', 'Cable Machine', 'Strength', 'Horizontal Pull', NULL, NULL),
+(16, 'Cable Biceps Curl', 'Biceps', 'Brachialis', 'Arms', 'Cable Machine', 'Strength', 'Elbow Flexion', NULL, NULL),
+(17, 'Dumbbell Biceps Curl', 'Biceps', 'Brachialis', 'Arms', 'Dumbbells', 'Strength', 'Elbow Flexion', NULL, NULL),
+(18, 'Hammer Curl', 'Brachialis', 'Biceps', 'Arms', 'Dumbbells', 'Strength', 'Elbow Flexion', NULL, NULL),
+
+-- LOWER BODY - QUADRICEPS / GLUTES
+(19, 'Hack Squat', 'Quadriceps', 'Gluteus Maximus', 'Legs', 'Hack Squat Machine', 'Strength', 'Squat', NULL, NULL),
+(20, 'Leg Press', 'Quadriceps', 'Gluteus Maximus', 'Legs', 'Leg Press Machine', 'Strength', 'Squat', NULL, NULL),
+(21, 'Single Leg Press', 'Quadriceps', 'Gluteus Maximus', 'Legs', 'Leg Press Machine', 'Strength', 'Squat', NULL, NULL),
+(22, 'Bodyweight Squat', 'Quadriceps', 'Gluteus Maximus', 'Legs', 'Bodyweight', 'Strength', 'Squat', NULL, NULL),
+(23, 'Goblet Squat', 'Quadriceps', 'Gluteus Maximus', 'Legs', 'Dumbbell', 'Strength', 'Squat', NULL, NULL),
+(24, 'Leg Extension', 'Quadriceps', NULL, 'Legs', 'Leg Extension Machine', 'Strength', 'Knee Extension', NULL, NULL),
+(25, 'Hip Abduction', 'Gluteus Medius', 'Gluteus Minimus', 'Glutes', 'Hip Abduction Machine', 'Strength', 'Hip Abduction', NULL, NULL),
+(26, 'Hip Adduction', 'Adductors', NULL, 'Inner Thigh', 'Hip Adduction Machine', 'Strength', 'Hip Adduction', NULL, NULL),
+
+-- LOWER BODY - HAMSTRINGS / GLUTES
+(27, 'Seated Leg Curl', 'Hamstrings', 'Gastrocnemius', 'Legs', 'Leg Curl Machine', 'Strength', 'Knee Flexion', NULL, NULL),
+(28, 'Lying Leg Curl', 'Hamstrings', 'Gastrocnemius', 'Legs', 'Leg Curl Machine', 'Strength', 'Knee Flexion', NULL, NULL),
+(29, 'Hip Thrust', 'Gluteus Maximus', 'Hamstrings', 'Glutes', 'Smith Machine', 'Strength', 'Hip Extension', NULL, NULL),
+(30, 'Glute Bridge', 'Gluteus Maximus', 'Hamstrings', 'Glutes', 'Bodyweight', 'Strength', 'Hip Extension', NULL, NULL),
+(31, 'Cable Pull Through', 'Gluteus Maximus', 'Hamstrings', 'Glutes', 'Cable Machine', 'Strength', 'Hinge', NULL, NULL),
+(32, 'Romanian Deadlift', 'Hamstrings', 'Gluteus Maximus', 'Legs', 'Dumbbells', 'Strength', 'Hinge', NULL, NULL),
+
+-- CALVES
+(33, 'Standing Calf Raise', 'Gastrocnemius', 'Soleus', 'Calves', 'Machine', 'Strength', 'Calf Raise', NULL, NULL),
+(34, 'Seated Calf Raise', 'Soleus', 'Gastrocnemius', 'Calves', 'Machine', 'Strength', 'Calf Raise', NULL, NULL),
+(35, 'Single Leg Calf Raise', 'Gastrocnemius', 'Soleus', 'Calves', 'Bodyweight', 'Strength', 'Calf Raise', NULL, NULL),
+
+-- CORE
+(36, 'Cable Crunch', 'Rectus Abdominis', 'Obliques', 'Core', 'Cable Machine', 'Core', 'Spinal Flexion', NULL, NULL),
+(37, 'Plank', 'Transverse Abdominis', 'Rectus Abdominis', 'Core', 'Bodyweight', 'Core', 'Anti-Extension', NULL, NULL),
+(38, 'Side Plank', 'Obliques', 'Transverse Abdominis', 'Core', 'Bodyweight', 'Core', 'Anti-Lateral Flexion', NULL, NULL),
+(39, 'Dead Bug', 'Transverse Abdominis', 'Rectus Abdominis', 'Core', 'Bodyweight', 'Core', 'Anti-Extension', NULL, NULL),
+(40, 'Bird Dog', 'Erector Spinae', 'Transverse Abdominis', 'Core', 'Bodyweight', 'Core', 'Anti-Rotation', NULL, NULL),
+(41, 'Pallof Press', 'Obliques', 'Transverse Abdominis', 'Core', 'Cable Machine', 'Core', 'Anti-Rotation', NULL, NULL),
+(42, 'Hanging Knee Raise', 'Rectus Abdominis', 'Hip Flexors', 'Core', 'Captain Chair', 'Core', 'Hip Flexion', NULL, NULL),
+(43, 'Russian Twist', 'Obliques', 'Rectus Abdominis', 'Core', 'Medicine Ball', 'Core', 'Rotation', NULL, NULL),
+(44, 'Bicycle Crunch', 'Rectus Abdominis', 'Obliques', 'Core', 'Bodyweight', 'Core', 'Rotation', NULL, NULL),
+
+-- AGILITY / ATHLETIC TRAINING
+(45, 'Agility Ladder Two Feet In', NULL, NULL, 'Full Body', 'Agility Ladder', 'Agility', 'Locomotion', NULL, NULL),
+(46, 'Agility Ladder In And Out', NULL, NULL, 'Full Body', 'Agility Ladder', 'Agility', 'Lateral', NULL, NULL),
+(47, 'Lateral Agility Ladder', NULL, NULL, 'Full Body', 'Agility Ladder', 'Agility', 'Lateral', NULL, NULL),
+(48, 'Ickey Shuffle', NULL, NULL, 'Full Body', 'Agility Ladder', 'Agility', 'Lateral', NULL, NULL),
+(49, 'Cone Shuttle Drill', 'Quadriceps', 'Gluteus Maximus', 'Full Body', 'Cones', 'Agility', 'Change of Direction', NULL, NULL),
+(50, 'Lateral Cone Shuffle', 'Gluteus Medius', 'Quadriceps', 'Lower Body', 'Cones', 'Agility', 'Lateral', NULL, NULL),
+(51, 'Carioca Drill', 'Gluteus Medius', 'Obliques', 'Full Body', 'Cones', 'Agility', 'Lateral', NULL, NULL),
+(52, 'Forward Backpedal Drill', 'Quadriceps', 'Hamstrings', 'Full Body', 'Cones', 'Agility', 'Change of Direction', NULL, NULL),
+(53, 'T Drill', 'Quadriceps', 'Gluteus Medius', 'Full Body', 'Cones', 'Agility', 'Change of Direction', NULL, NULL),
+(54, 'Box Jump', 'Quadriceps', 'Gluteus Maximus', 'Lower Body', 'Plyometric Box', 'Plyometric', 'Vertical Jump', NULL, NULL),
+(55, 'Lateral Bounds', 'Gluteus Medius', 'Quadriceps', 'Lower Body', 'Bodyweight', 'Plyometric', 'Lateral', NULL, NULL),
+
+-- DYNAMIC WARM UPS
+(56, 'Arm Circles', 'Deltoids', NULL, 'Shoulders', 'Bodyweight', 'Warm-Up', 'Dynamic', NULL, NULL),
+(57, 'Shoulder Rolls', 'Trapezius', 'Deltoids', 'Shoulders', 'Bodyweight', 'Warm-Up', 'Dynamic', NULL, NULL),
+(58, 'Arm Swings', 'Pectoralis Major', 'Posterior Deltoid', 'Upper Body', 'Bodyweight', 'Warm-Up', 'Dynamic', NULL, NULL),
+(59, 'Leg Swings Front to Back', 'Hip Flexors', 'Hamstrings', 'Hips', 'Bodyweight', 'Warm-Up', 'Dynamic', NULL, NULL),
+(60, 'Leg Swings Side to Side', 'Adductors', 'Gluteus Medius', 'Hips', 'Bodyweight', 'Warm-Up', 'Dynamic', NULL, NULL),
+(61, 'Walking Knee Hug', 'Gluteus Maximus', 'Hamstrings', 'Lower Body', 'Bodyweight', 'Warm-Up', 'Dynamic', NULL, NULL),
+(62, 'Walking Quad Pull', 'Quadriceps', 'Hip Flexors', 'Lower Body', 'Bodyweight', 'Warm-Up', 'Dynamic', NULL, NULL),
+(63, 'Worlds Greatest Stretch', 'Hip Flexors', 'Hamstrings', 'Full Body', 'Bodyweight', 'Warm-Up', 'Dynamic', NULL, NULL),
+(64, 'Walking Lunge With Rotation', 'Quadriceps', 'Obliques', 'Full Body', 'Bodyweight', 'Warm-Up', 'Dynamic', NULL, NULL),
+(65, 'High Knees', 'Hip Flexors', 'Quadriceps', 'Lower Body', 'Bodyweight', 'Warm-Up', 'Locomotion', NULL, NULL),
+(66, 'Butt Kicks', 'Hamstrings', 'Quadriceps', 'Lower Body', 'Bodyweight', 'Warm-Up', 'Locomotion', NULL, NULL),
+
+-- ACTIVATION
+(67, 'Glute Bridge Warm Up', 'Gluteus Maximus', 'Hamstrings', 'Glutes', 'Bodyweight', 'Warm-Up', 'Hip Extension', NULL, NULL),
+(68, 'Band Pull Apart', 'Posterior Deltoid', 'Rhomboids', 'Upper Back', 'Resistance Band', 'Warm-Up', 'Horizontal Abduction', NULL, NULL),
+(69, 'Band External Rotation', 'Rotator Cuff', 'Posterior Deltoid', 'Shoulders', 'Resistance Band', 'Warm-Up', 'External Rotation', NULL, NULL),
+(70, 'Banded Lateral Walk', 'Gluteus Medius', 'Gluteus Minimus', 'Glutes', 'Resistance Band', 'Warm-Up', 'Lateral', NULL, NULL),
+(71, 'Bodyweight Good Morning', 'Hamstrings', 'Gluteus Maximus', 'Posterior Chain', 'Bodyweight', 'Warm-Up', 'Hinge', NULL, NULL),
+
+-- STATIC STRETCHES
+(72, 'Standing Hamstring Stretch', 'Hamstrings', NULL, 'Legs', 'Bodyweight', 'Stretch', 'Static', NULL, NULL),
+(73, 'Standing Quad Stretch', 'Quadriceps', NULL, 'Legs', 'Bodyweight', 'Stretch', 'Static', NULL, NULL),
+(74, 'Hip Flexor Stretch', 'Hip Flexors', 'Quadriceps', 'Hips', 'Bodyweight', 'Stretch', 'Static', NULL, NULL),
+(75, 'Figure Four Glute Stretch', 'Gluteus Maximus', 'Piriformis', 'Glutes', 'Bodyweight', 'Stretch', 'Static', NULL, NULL),
+(76, 'Butterfly Stretch', 'Adductors', NULL, 'Inner Thigh', 'Bodyweight', 'Stretch', 'Static', NULL, NULL),
+(77, 'Calf Stretch', 'Gastrocnemius', 'Soleus', 'Calves', 'Bodyweight', 'Stretch', 'Static', NULL, NULL),
+(78, 'Doorway Chest Stretch', 'Pectoralis Major', 'Anterior Deltoid', 'Chest', 'Bodyweight', 'Stretch', 'Static', NULL, NULL),
+(79, 'Cross Body Shoulder Stretch', 'Posterior Deltoid', NULL, 'Shoulders', 'Bodyweight', 'Stretch', 'Static', NULL, NULL),
+(80, 'Overhead Triceps Stretch', 'Triceps', NULL, 'Arms', 'Bodyweight', 'Stretch', 'Static', NULL, NULL),
+(81, 'Lat Stretch', 'Latissimus Dorsi', NULL, 'Back', 'Bodyweight', 'Stretch', 'Static', NULL, NULL),
+
+-- COOL DOWN
+(82, 'Treadmill Cool Down Walk', NULL, NULL, 'Cardiovascular', 'Treadmill', 'Cool-Down', 'Steady State', NULL, NULL),
+(83, 'Stationary Bike Cool Down', NULL, NULL, 'Cardiovascular', 'Stationary Bike', 'Cool-Down', 'Steady State', NULL, NULL),e
+(84, 'Easy Outdoor Walk', NULL, NULL, 'Cardiovascular', 'None', 'Cool-Down', 'Steady State', NULL, NULL),
+
+-- GENERAL CARDIO
+(85, 'Flat Treadmill Walk', 'Quadriceps', 'Hamstrings', 'Cardiovascular', 'Treadmill', 'Cardio', 'Steady State', NULL, NULL),
+(86, 'Incline Treadmill Walk', 'Gluteus Maximus', 'Quadriceps', 'Cardiovascular', 'Treadmill', 'Cardio', 'Steady State', NULL, NULL),
+(87, 'Outdoor Walk', 'Quadriceps', 'Hamstrings', 'Cardiovascular', 'None', 'Cardio', 'Steady State', NULL, NULL),
+(88, 'Treadmill Jog', 'Quadriceps', 'Hamstrings', 'Cardiovascular', 'Treadmill', 'Cardio', 'Locomotion', NULL, NULL),
+(89, 'Outdoor Jog', 'Quadriceps', 'Hamstrings', 'Cardiovascular', 'None', 'Cardio', 'Locomotion', NULL, NULL),
+(90, 'Stationary Bike', 'Quadriceps', 'Hamstrings', 'Cardiovascular', 'Stationary Bike', 'Cardio', 'Steady State', NULL, NULL),
+(91, 'Elliptical', 'Quadriceps', 'Gluteus Maximus', 'Cardiovascular', 'Elliptical', 'Cardio', 'Steady State', NULL, NULL),
+(92, 'Stair Climber', 'Gluteus Maximus', 'Quadriceps', 'Cardiovascular', 'Stair Climber', 'Cardio', 'Steady State', NULL, NULL),
+(93, 'Rowing Machine', 'Latissimus Dorsi', 'Quadriceps', 'Full Body', 'Rowing Machine', 'Cardio', 'Steady State', NULL, NULL),
+
+-- ENDURANCE TRAINING
+(94, 'Tempo Run', 'Quadriceps', 'Hamstrings', 'Cardiovascular', 'Track', 'Cardio', 'Tempo', NULL, NULL),
+(95, 'Long Distance Run', 'Quadriceps', 'Hamstrings', 'Cardiovascular', 'Track', 'Cardio', 'Endurance', NULL, NULL),
+(96, 'Long Distance Treadmill Run', 'Quadriceps', 'Hamstrings', 'Cardiovascular', 'Treadmill', 'Cardio', 'Endurance', NULL, NULL),
+(97, 'Progression Run', 'Quadriceps', 'Hamstrings', 'Cardiovascular', 'Track', 'Cardio', 'Endurance', NULL, NULL),
+(98, 'Fartlek Run', 'Quadriceps', 'Hamstrings', 'Cardiovascular', 'Track', 'Cardio', 'Interval', NULL, NULL),
+
+-- SPRINT / ADVANCED ATHLETIC CARDIO
+(99, 'Treadmill Sprint', 'Hamstrings', 'Gluteus Maximus', 'Cardiovascular', 'Treadmill', 'Cardio', 'Sprint', NULL, NULL),
+(100, 'Track Sprint', 'Hamstrings', 'Gluteus Maximus', 'Cardiovascular', 'Track', 'Cardio', 'Sprint', NULL, NULL),
+(101, 'Hill Sprint', 'Gluteus Maximus', 'Hamstrings', 'Cardiovascular', 'Hill', 'Cardio', 'Sprint', NULL, NULL),
+(102, 'Sprint Interval Run', 'Hamstrings', 'Quadriceps', 'Cardiovascular', 'Track', 'Cardio', 'Interval', NULL, NULL),
+(103, 'Shuttle Sprint', 'Quadriceps', 'Hamstrings', 'Full Body', 'Cones', 'Cardio', 'Change of Direction', NULL, NULL),
+(104, 'Flying Sprint', 'Hamstrings', 'Gluteus Maximus', 'Cardiovascular', 'Track', 'Cardio', 'Sprint', NULL, NULL),
+(105, 'Acceleration Sprint', 'Gluteus Maximus', 'Hamstrings', 'Cardiovascular', 'Track', 'Cardio', 'Sprint', NULL, NULL);
