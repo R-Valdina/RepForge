@@ -71,3 +71,24 @@ CREATE TABLE `Exercise` (
     DemonstrationURL VARCHAR(128) NULL,
     SourceURL VARCHAR(128) NULL
 );
+
+CREATE TABLE `WorkoutPlan` (
+    Id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    UserId INT NOT NULL,
+    Title VARCHAR(128),
+
+    FOREIGN KEY(UserId)
+        REFERENCES `User`(`Id`)
+);
+
+CREATE TABLE `WorkoutExercise` (
+    Id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    ExerciseId INT NOT NULL,
+    WorkoutPlanId INT NOT NULL,
+    Section VARCHAR(64) NOT NULL,
+    OrderInSection INT NOT NULL,
+    Sets INT NULL,
+    Reps INT NULL,
+    Weight INT NULL,
+    Duration FLOAT NULL
+);
