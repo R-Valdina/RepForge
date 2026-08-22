@@ -75,7 +75,7 @@ CREATE TABLE `Exercise` (
 CREATE TABLE `WorkoutPlan` (
     Id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
     UserId INT NOT NULL,
-    Title VARCHAR(128),
+    Title VARCHAR(128) NOT NULL,
 
     FOREIGN KEY(UserId)
         REFERENCES `User`(`Id`)
@@ -117,12 +117,12 @@ CREATE TABLE `ForumCategory` (
 
 CREATE TABLE `ForumPost` (
     Id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    UserId INT,
-    ForumCategoryId INT,
-    ParentPostId INT,
-    Title VARCHAR(64),
-    Body TEXT,
-    CreatedAt DATETIME,
+    UserId INT NOT NULL,
+    ForumCategoryId INT NOT NULL,
+    ParentPostId INT NULL,
+    Title VARCHAR(64) NOT NULL,
+    Body TEXT NOT NULL,
+    CreatedAt DATETIME NOT NULL,
 
     FOREIGN KEY(UserId)
         REFERENCES `User`(`Id`),
@@ -133,9 +133,9 @@ CREATE TABLE `ForumPost` (
 );
 
 CREATE TABLE `ForumPostReact` (
-    UserId INT,
-    ForumPostId INT,
-    ReactionType ENUM('like', 'save'),
+    UserId INT NOT NULL,
+    ForumPostId INT NOT NULL,
+    ReactionType ENUM('like', 'save') NOT NULL,
 
     PRIMARY KEY(UserId, ForumPostId, ReactionType),
 
@@ -144,5 +144,65 @@ CREATE TABLE `ForumPostReact` (
         ON DELETE CASCADE,
     FOREIGN KEY(ForumPostId)
         REFERENCES `ForumPost`(`Id`)
+        ON DELETE CASCADE
+);
+
+CREATE TABLE `PrivateMessage` (
+    Id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    SenderUserId INT NOT NULL,
+    RecipientUserId INT NOT NULL,
+    Body TEXT NOT NULL,
+    CreatedAt DATETIME NOT NULL,
+
+    FOREIGN KEY(SenderUserId)
+        REFERENCES `User`(`Id`),
+    FOREIGN KEY(RecipientUserId)
+        REFERENCES `User`(`Id`)
+);
+
+CREATE TABLE `Meal` (
+    Id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    Name VARCHAR(64) NOT NULL,
+    Calories FLOAT NULL,
+    Protein FLOAT NULL,
+    Carbohydrates FLOAT NULL,
+    Fat FLOAT NULL,
+    Sugar FLOAT NULL,
+    Fiber FLOAT NULL,
+    DemonstrationURL VARCHAR(128) NULL,
+    SourceURL VARCHAR(128) NULL
+);
+
+CREATE TABLE `MealPlan` (
+    Id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    UserId INT NOT NULL,
+    Title VARCHAR(128) NOT NULL,
+
+    FOREIGN KEY(UserId)
+        REFERENCES `User`(`Id`)
+);
+
+CREATE TABLE `MealPlanSection` (
+    Id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    MealPlanId INT NOT NULL,
+    Name VARCHAR(64) NOT NULL,
+    OrderInMealPlan INT NOT NULL,
+
+    FOREIGN KEY(MealPlanId)
+        REFERENCES `MealPlan`(`Id`)
+        ON DELETE CASCADE
+);
+
+CREATE TABLE `MealPlanMeal` (
+    Id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    MealId INT NOT NULL,
+    MealPlanSectionId INT NOT NULL,
+    OrderInSection INT NOT NULL,
+
+    FOREIGN KEY(MealId)
+        REFERENCES `Meal`(`Id`)
+        ON DELETE CASCADE,
+    FOREIGN KEY(MealPlanSectionId)
+        REFERENCES `MealPlanSection`(`Id`)
         ON DELETE CASCADE
 );
