@@ -103,8 +103,46 @@ CREATE TABLE `WorkoutExercise` (
     Duration FLOAT NULL,
 
     FOREIGN KEY(ExerciseId)
-        REFERENCES `Exercise`(`Id`),
+        REFERENCES `Exercise`(`Id`)
+        ON DELETE CASCADE,
     FOREIGN KEY(WorkoutPlanSectionId)
         REFERENCES `WorkoutPlanSection`(`Id`)
+        ON DELETE CASCADE
+);
+
+CREATE TABLE `ForumCategory` (
+    Id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    Name VARCHAR(64) NOT NULL
+);
+
+CREATE TABLE `ForumPost` (
+    Id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    UserId INT,
+    ForumCategoryId INT,
+    ParentPostId INT,
+    Title VARCHAR(64),
+    Body TEXT,
+    CreatedAt DATETIME,
+
+    FOREIGN KEY(UserId)
+        REFERENCES `User`(`Id`),
+    FOREIGN KEY(ForumCategoryId)
+        REFERENCES `ForumCategory`(`Id`),
+    FOREIGN KEY(ParentPostId)
+        REFERENCES `ForumPost`(`Id`)
+);
+
+CREATE TABLE `ForumPostReact` (
+    UserId INT,
+    ForumPostId INT,
+    ReactionType ENUM('like', 'save'),
+
+    PRIMARY KEY(UserId, ForumPostId, ReactionType),
+
+    FOREIGN KEY(UserId)
+        REFERENCES `User`(`Id`)
+        ON DELETE CASCADE,
+    FOREIGN KEY(ForumPostId)
+        REFERENCES `ForumPost`(`Id`)
         ON DELETE CASCADE
 );
