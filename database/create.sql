@@ -81,14 +81,30 @@ CREATE TABLE `WorkoutPlan` (
         REFERENCES `User`(`Id`)
 );
 
+CREATE TABLE `WorkoutPlanSection` (
+    Id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    WorkoutPlanId INT NOT NULL,
+    Name VARCHAR(64) NOT NULL,
+    OrderInWorkoutPlan INT NOT NULL,
+
+    FOREIGN KEY(WorkoutPlanId)
+        REFERENCES `WorkoutPlan`(`Id`)
+        ON DELETE CASCADE
+);
+
 CREATE TABLE `WorkoutExercise` (
     Id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
     ExerciseId INT NOT NULL,
-    WorkoutPlanId INT NOT NULL,
-    Section VARCHAR(64) NOT NULL,
+    WorkoutPlanSectionId INT NOT NULL,
     OrderInSection INT NOT NULL,
     Sets INT NULL,
     Reps INT NULL,
     Weight INT NULL,
-    Duration FLOAT NULL
+    Duration FLOAT NULL,
+
+    FOREIGN KEY(ExerciseId)
+        REFERENCES `Exercise`(`Id`),
+    FOREIGN KEY(WorkoutPlanSectionId)
+        REFERENCES `WorkoutPlanSection`(`Id`)
+        ON DELETE CASCADE
 );
