@@ -120,9 +120,11 @@ CREATE TABLE `ForumPost` (
     UserId INT NOT NULL,
     ForumCategoryId INT NOT NULL,
     ParentPostId INT NULL,
-    Title VARCHAR(64) NOT NULL,
+    Title VARCHAR(64) NULL,
     Body TEXT NOT NULL,
     CreatedAt DATETIME NOT NULL,
+
+    CHECK ((Title IS NULL) XOR (ParentPostId IS NULL)),
 
     FOREIGN KEY(UserId)
         REFERENCES `User`(`Id`),
