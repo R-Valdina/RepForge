@@ -1088,3 +1088,170 @@ VALUES
 (4, 37, 'like'),
 (2, 73, 'like'),
 (5, 118, 'like');
+
+-- Conversation 1 - JordanMiles and TaylorBrooks - Close Friends / Very Active
+-- Message count: 45
+INSERT INTO PrivateMessage (Id, SenderUserId, RecipientUserId, Body, CreatedAt)
+VALUES
+(1, 1, 3, 'You still running tomorrow morning?', '2026-06-06 20:14:00'),
+(2, 3, 1, 'yep', '2026-06-06 20:15:00'),
+(3, 3, 1, 'trying to get out before it gets gross outside', '2026-06-06 20:15:24'),
+(4, 3, 1, 'probably around 7', '2026-06-06 20:16:03'),
+(5, 1, 3, 'That is far earlier than I wanted you to say.', '2026-06-06 20:17:11'),
+(6, 3, 1, 'you asked lol', '2026-06-06 20:17:49'),
+(7, 1, 3, 'Fair. Send me the route when you decide where you''re going.', '2026-06-06 20:19:08'),
+(8, 3, 1, 'bet', '2026-06-06 20:19:33'),
+(9, 3, 1, 'also', '2026-06-06 20:19:51'),
+(10, 3, 1, 'the ladder drills are way harder than they look', '2026-06-06 20:20:06'),
+(11, 3, 1, 'i almost ate pavement twice', '2026-06-06 20:20:18'),
+(12, 1, 3, 'I would have paid money to see that.', '2026-06-06 20:22:02'),
+(13, 3, 1, 'ran 5 miles', '2026-06-07 09:18:04'),
+(14, 3, 1, 'legs feel good', '2026-06-07 09:18:18'),
+(15, 3, 1, 'lungs disagree', '2026-06-07 09:18:31'),
+(16, 1, 3, 'That''s a pretty solid morning. Did you keep the pace easy?', '2026-06-07 09:25:10'),
+(17, 3, 1, 'mostly', '2026-06-07 09:26:02'),
+(18, 3, 1, 'last mile got competitive with myself', '2026-06-07 09:26:17'),
+(19, 1, 3, 'You were right about the active recovery day. I kept it easy and my legs actually felt better afterward.', '2026-06-11 18:43:22'),
+(20, 3, 1, 'SEE', '2026-06-11 18:44:01'),
+(21, 3, 1, 'cardio can be nice', '2026-06-11 18:44:13'),
+(22, 3, 1, 'you dont have to fight the treadmill every time', '2026-06-11 18:44:30'),
+(23, 1, 3, 'Let''s not get carried away.', '2026-06-11 18:45:02'),
+(24, 3, 1, 'you doing lower 2 tonight?', '2026-06-18 13:07:11'),
+(25, 1, 3, 'Yeah, after work. RDLs are still the part I''m watching.', '2026-06-18 13:22:46'),
+(26, 3, 1, 'if your back says no', '2026-06-18 13:23:20'),
+(27, 3, 1, 'listen to it', '2026-06-18 13:23:28'),
+(28, 3, 1, 'the gym will still be there tomorrow', '2026-06-18 13:23:39'),
+(29, 1, 3, 'Look at you being responsible.', '2026-06-18 13:26:14'),
+(30, 1, 3, 'Did you ever try the shuttle sprint setup we talked about?', '2026-07-02 08:11:05'),
+(31, 3, 1, 'yesterday', '2026-07-02 08:11:42'),
+(32, 3, 1, '10/10 terrible', '2026-07-02 08:11:50'),
+(33, 3, 1, 'doing it again saturday', '2026-07-02 08:12:04'),
+(34, 1, 3, 'That''s the endorsement I expected.', '2026-07-02 08:13:21'),
+(35, 3, 1, 'random question', '2026-07-18 22:41:10'),
+(36, 3, 1, 'do you track every warmup set', '2026-07-18 22:41:21'),
+(37, 3, 1, 'or just working sets', '2026-07-18 22:41:33'),
+(38, 1, 3, 'Usually just working sets unless I''m specifically testing something about the warm-up.', '2026-07-18 22:49:02'),
+(39, 3, 1, 'good', '2026-07-18 22:49:30'),
+(40, 3, 1, 'because logging every tiny thing was driving me insane', '2026-07-18 22:49:47'),
+(41, 1, 3, 'Gym tomorrow?', '2026-08-14 17:32:04'),
+(42, 3, 1, 'cant', '2026-08-14 17:35:11'),
+(43, 3, 1, 'long run', '2026-08-14 17:35:19'),
+(44, 3, 1, 'sunday though?', '2026-08-14 17:35:26'),
+(45, 1, 3, 'Sunday works. I''ll do recovery work and you can bounce around doing whatever cardio goblin activity you''ve planned.', '2026-08-14 17:38:55');
+
+-- Conversation 2 - JordanMiles and AlexRivera - Regular Training Discussion
+-- Message count: 23
+INSERT INTO PrivateMessage (Id, SenderUserId, RecipientUserId, Body, CreatedAt)
+VALUES
+(46, 2, 1, 'I looked over the split you posted. I like that Lower 1 and Lower 2 have different priorities instead of repeating the same session twice. If I were trying it, I would probably keep the first lower day more quad-focused and use the second for hamstrings and glutes so recovery is easier to manage across the week.', '2026-06-05 21:14:00'),
+(47, 1, 2, 'That''s basically what I''m doing. Lower 1 is much more quad focused.', '2026-06-05 21:27:18'),
+(48, 1, 2, 'Lower 2 is the one where I''m still trying to get the exercise order right.', '2026-06-05 21:28:02'),
+(49, 2, 1, 'That makes sense. I would change one variable at a time rather than rebuilding the whole day. If the exercises are working, adjusting order and volume will tell you much more than changing everything simultaneously.', '2026-06-06 18:52:41'),
+(50, 1, 2, 'Yeah, that''s the plan. I want enough consistency that I can actually tell what helped.', '2026-06-06 19:06:05'),
+(51, 1, 2, 'How are you liking the upper/lower setup?', '2026-06-15 12:18:17'),
+(52, 2, 1, 'More than I expected. The full-body day in the middle is moderate enough that it does not interfere with either lower day, and I like having two upper sessions with slightly different exercise selections. It feels structured without making every workout identical.', '2026-06-16 08:07:33'),
+(53, 1, 2, 'That delayed response tells me you actually thought about it.', '2026-06-16 08:12:11'),
+(54, 2, 1, 'I saw the message yesterday. I just did not want to answer until I had finished the second lower session for the week.', '2026-06-16 08:18:20'),
+(55, 1, 2, 'I finally moved the compounds later on one lower day. Knees felt surprisingly good.', '2026-06-29 17:44:03'),
+(56, 2, 1, 'That is useful information. I would keep an eye on whether the improved knee comfort is consistent or whether it was just a good day. If it holds for several sessions, then the tradeoff of doing the compound work with some accumulated fatigue may be worthwhile for you.', '2026-06-30 19:16:45'),
+(57, 1, 2, 'Exactly. I don''t want to decide based on one workout.', '2026-06-30 19:28:09'),
+(58, 2, 1, 'Have you changed anything about your active recovery day since the forum thread?', '2026-07-12 10:02:14'),
+(59, 1, 2, 'Not much. Easy cardio, mobility, some core, stretch. The whole point is still to leave feeling better than I started.', '2026-07-12 10:16:42'),
+(60, 2, 1, 'That is probably the right standard. If a recovery session starts creating its own recovery demand, it has stopped serving the purpose of the day.', '2026-07-13 07:55:18'),
+(61, 1, 2, 'I tried your idea of keeping the warm-up short instead of turning it into a workout.', '2026-07-28 18:20:10'),
+(62, 1, 2, 'Annoyingly, you were right.', '2026-07-28 18:20:39'),
+(63, 2, 1, 'I will accept the reluctant endorsement. A warm-up only needs to prepare you for the work that follows; it does not need to prove anything on its own.', '2026-07-29 08:24:51'),
+(64, 2, 1, 'I am thinking about changing my second upper day slightly. The first one is balanced, but I may bias the second toward back and rear delts because those are the areas I want to bring up. I would still keep one chest movement so the weekly frequency stays consistent.', '2026-08-10 07:48:25'),
+(65, 1, 2, 'That sounds reasonable. Different emphasis without turning it into a completely different program.', '2026-08-10 08:03:11'),
+(66, 2, 1, 'Exactly. I want enough variation to address priorities, but enough repetition that progress is still measurable.', '2026-08-11 07:41:09'),
+(67, 1, 2, 'Let me know how it feels after a couple weeks.', '2026-08-11 07:50:33'),
+(68, 2, 1, 'Will do. I would rather give you an answer after several sessions than pretend one good workout proves the change worked.', '2026-08-12 08:02:40');
+
+-- Conversation 3 - JordanMiles and MorganReed - Friendly / Evening Reply Pattern
+-- Message count: 14
+INSERT INTO PrivateMessage (Id, SenderUserId, RecipientUserId, Body, CreatedAt)
+VALUES
+(69, 1, 4, 'Do you have a stretch you like for hips after lower days?', '2026-06-09 11:24:18'),
+(70, 4, 1, 'Figure four and a hip flexor stretch are usually my first choices. I keep both gentle after training.', '2026-06-09 19:42:06'),
+(71, 1, 4, 'I''ll try that tonight. My instinct is always to pull harder than I probably need to.', '2026-06-09 19:49:12'),
+(72, 4, 1, 'That is usually when stretching stops feeling restorative. Give it time instead of force.', '2026-06-09 20:03:51'),
+(73, 1, 4, 'I added a little more mobility to active recovery. Definitely makes the day feel more intentional.', '2026-06-24 14:08:33'),
+(74, 4, 1, 'That is what I like about mobility work. It gives the session a purpose without turning recovery into another performance goal.', '2026-06-24 20:18:22'),
+(75, 4, 1, 'How did the hips feel after the new sequence?', '2026-07-07 19:31:44'),
+(76, 1, 4, 'Better. Especially the day after Lower 2.', '2026-07-07 19:39:10'),
+(77, 1, 4, 'I''m keeping it.', '2026-07-07 19:39:33'),
+(78, 4, 1, 'Good. Consistent and comfortable is more useful than complicated.', '2026-07-07 20:01:17'),
+(79, 1, 4, 'You would be horrified by how little I stretched after today''s workout.', '2026-08-03 09:11:28'),
+(80, 4, 1, 'I saw this at lunch and intentionally waited until I had time to respond without being judgmental.', '2026-08-03 19:12:05'),
+(81, 4, 1, 'Stretch tonight.', '2026-08-03 19:12:17'),
+(82, 1, 4, 'There it is.', '2026-08-03 19:15:46');
+
+-- Conversation 4 - AlexRivera and MorganReed - Professional / Polished
+-- Message count: 12
+INSERT INTO PrivateMessage (Id, SenderUserId, RecipientUserId, Body, CreatedAt)
+VALUES
+(83, 2, 4, 'I appreciated your comment about keeping mobility work controlled rather than treating every stretch as a flexibility test. I have been trying to make my warm-ups more deliberate, and that distinction helped me simplify what I was doing.', '2026-06-10 08:36:11'),
+(84, 4, 2, 'I''m glad it helped. I think mobility is most useful when it supports what you are about to do instead of competing with it.', '2026-06-10 19:08:43'),
+(85, 2, 4, 'That is a good way to frame it. I am going to keep the pre-workout movements dynamic and save the longer static work for afterward.', '2026-06-11 07:49:12'),
+(86, 4, 2, 'That sounds like a sensible split.', '2026-06-11 19:22:05'),
+(87, 4, 2, 'Your full-body plan looked well balanced. Has the middle day affected recovery at all?', '2026-06-28 20:01:33'),
+(88, 2, 4, 'So far, no. I deliberately keep that session moderate and avoid taking every movement to failure. The goal is additional practice and weekly volume without turning Wednesday into another recovery problem before the second half of the week.', '2026-06-29 07:32:58'),
+(89, 4, 2, 'That restraint is probably why it works.', '2026-06-29 19:14:16'),
+(90, 2, 4, 'Do you have a preference between dedicated mobility sessions and adding ten minutes to the end of several workouts? I can see advantages to both approaches, but I am trying to choose the option I am most likely to do consistently.', '2026-07-21 08:02:44'),
+(91, 4, 2, 'For consistency, I would add shorter blocks to sessions you already do. A dedicated session is useful only if it actually happens.', '2026-07-21 19:36:27'),
+(92, 2, 4, 'That is probably the answer I needed. I was designing the ideal schedule instead of the one I will realistically follow.', '2026-07-22 07:45:11'),
+(93, 4, 2, 'The realistic version usually wins.', '2026-07-22 19:02:39'),
+(94, 2, 4, 'The shorter mobility blocks have been much easier to maintain. Thank you for the suggestion.', '2026-08-17 08:10:26');
+
+-- Conversation 5 - TaylorBrooks and MorganReed - Cardio / Recovery
+-- Message count: 9
+INSERT INTO PrivateMessage (Id, SenderUserId, RecipientUserId, Body, CreatedAt)
+VALUES
+(95, 3, 4, 'sprints today', '2026-06-13 10:22:41'),
+(96, 3, 4, 'hips are MAD', '2026-06-13 10:22:48'),
+(97, 3, 4, 'what do you do after', '2026-06-13 10:23:01'),
+(98, 4, 3, 'I usually walk until my breathing settles, then do hip flexor and hamstring stretches later. I would not force range immediately after hard sprints.', '2026-06-13 19:17:30'),
+(99, 3, 4, 'that explains why trying to become a pretzel immediately felt bad', '2026-06-13 19:18:09'),
+(100, 3, 4, 'did the walk first this time', '2026-07-04 11:46:25'),
+(101, 3, 4, 'way better', '2026-07-04 11:46:36'),
+(102, 4, 3, 'Good. Your body does not need every recovery strategy at the exact second training ends.', '2026-07-04 20:06:18'),
+(103, 3, 4, 'you were right again', '2026-08-09 18:51:02');
+
+-- Conversation 6 - JordanMiles and CaseyStone - Casual / Inconsistent
+-- Message count: 14
+INSERT INTO PrivateMessage (Id, SenderUserId, RecipientUserId, Body, CreatedAt)
+VALUES
+(104, 5, 1, 'bro', '2026-06-20 22:13:44'),
+(105, 5, 1, 'why are there TWO lower days', '2026-06-20 22:13:51'),
+(106, 1, 5, 'Because I enjoy being able to walk up stairs without questioning my life choices.', '2026-06-20 22:16:08'),
+(107, 5, 1, 'sounds fake', '2026-06-20 22:16:25'),
+(108, 5, 1, 'chest tomorrow?', '2026-06-20 22:16:33'),
+(109, 1, 5, 'I''m doing Pull.', '2026-06-20 22:17:19'),
+(110, 5, 1, 'close enough', '2026-06-20 22:17:31'),
+(111, 1, 5, 'Did you ever actually try the leg press after all that complaining?', '2026-07-11 13:28:04'),
+(112, 5, 1, 'no', '2026-07-13 21:07:42'),
+(113, 5, 1, 'but i thought about it', '2026-07-13 21:07:50'),
+(114, 1, 5, 'Two-day response time and that''s what I get.', '2026-07-13 21:11:05'),
+(115, 5, 1, 'hit chest twice this week', '2026-08-06 23:31:17'),
+(116, 1, 5, 'I am shocked. Absolutely shocked.', '2026-08-07 08:04:12'),
+(117, 5, 1, 'consistency matters', '2026-08-07 22:48:39');
+
+-- Conversation 7 - TaylorBrooks and CaseyStone - Sparse / Playful
+-- Message count: 8
+INSERT INTO PrivateMessage (Id, SenderUserId, RecipientUserId, Body, CreatedAt)
+VALUES
+(118, 3, 5, 'you should come do agility drills sometime', '2026-07-03 16:41:02'),
+(119, 5, 3, 'is there running', '2026-07-03 16:43:15'),
+(120, 3, 5, 'yes', '2026-07-03 16:43:27'),
+(121, 5, 3, 'then no', '2026-07-03 16:43:39'),
+(122, 3, 5, 'coward', '2026-07-03 16:43:52'),
+(123, 5, 3, 'alive coward', '2026-07-03 16:44:08'),
+(124, 3, 5, 'saw your no leg day post', '2026-07-24 08:16:31'),
+(125, 3, 5, 'embarrassing', '2026-07-24 08:16:39');
+
+-- Conversation 8 - CaseyStone to AlexRivera - Single Unanswered Message
+-- Message count: 1
+-- Intentionally unanswered.
+INSERT INTO PrivateMessage (Id, SenderUserId, RecipientUserId, Body, CreatedAt)
+VALUES
+(126, 5, 2, 'hey your upper body setup actually looks pretty solid. what are you doing for shoulders on the second day?', '2026-08-20 23:14:52');
