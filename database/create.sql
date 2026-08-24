@@ -208,3 +208,10 @@ CREATE TABLE `MealPlanMeal` (
         REFERENCES `MealPlanSection`(`Id`)
         ON DELETE CASCADE
 );
+
+CREATE TABLE `Bill` (
+    Id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    UserId INT NOT NULL,
+    Amount DECIMAL(10,2) NOT NULL,
+    PaidAt DATETIME NULL
+);
