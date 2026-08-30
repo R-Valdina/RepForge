@@ -1491,3 +1491,43 @@ VALUES
 
 -- User 5 - CaseyStone
 -- Intentionally has no MealPlan records.
+
+-- User 1 - JordanMiles
+INSERT INTO Bill (Id, UserId, Amount, Description, PaidAt)
+VALUES
+(1, 1, 25.00, 'Founding Supporter', '2026-05-01 09:12:00'),
+(2, 1, 4.99, 'Membership (Ad Free)', '2026-05-02 08:03:00'),
+(3, 1, 9.99, 'Membership (Premium)', '2026-06-02 08:06:00'),
+(4, 1, 10.00, 'Support RepForge', '2026-06-05 20:17:00'),
+(5, 1, 9.99, 'Membership (Premium)', '2026-07-02 08:01:00'),
+(6, 1, 20.00, 'Support RepForge', '2026-07-18 19:42:00'),
+(7, 1, 99.99, 'Membership (Premium - Annual)', '2026-08-02 08:05:00'),
+(8, 1, 49.99, 'Gift Membership (Premium) - TaylorBrooks', '2026-08-03 18:26:00'),
+(9, 1, 20.00, 'Support RepForge', '2026-08-15 21:14:00'),
+(10, 1, 49.99, 'Gift Membership (Ad Free) - AlexRivera', '2026-08-22 17:33:00');
+
+-- User 2 - AlexRivera
+INSERT INTO Bill (Id, UserId, Amount, Description, PaidAt)
+VALUES
+(11, 2, 9.99, 'Membership (Premium)', '2026-05-10 07:45:00'),
+(12, 2, 9.99, 'Membership (Premium)', '2026-06-10 07:42:00'),
+(13, 2, 9.99, 'Membership (Premium)', '2026-07-10 07:48:00'),
+(14, 2, 99.99, 'Membership (Premium - Annual)', '2026-08-10 07:51:00'),
+(15, 2, 10.00, 'Support RepForge', '2026-08-12 18:10:00');
+
+-- User 3 - TaylorBrooks
+INSERT INTO Bill (Id, UserId, Amount, Description, PaidAt)
+VALUES
+(16, 3, 5.00, 'Support RepForge', '2026-06-21 09:18:00'),
+(17, 3, 10.00, 'Support RepForge', '2026-07-20 11:24:00');
+
+-- User 4 - MorganReed
+INSERT INTO Bill (Id, UserId, Amount, Description, PaidAt)
+VALUES
+(18, 4, 4.99, 'Membership (Ad Free)', '2026-05-14 19:04:00'),
+(19, 4, 4.99, 'Membership (Ad Free)', '2026-06-14 19:11:00'),
+(20, 4, 4.99, 'Membership (Ad Free)', '2026-07-14 19:07:00'),
+(21, 4, 49.99, 'Membership (Ad Free - Annual)', '2026-08-14 19:16:00');
+
+-- User 5 - CaseyStone
+-- Intentionally has no Bill records.
