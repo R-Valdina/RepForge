@@ -1,0 +1,4 @@
+
+
+# Sensitive data which shouldn't go into git
+*.ini
