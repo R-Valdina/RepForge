@@ -1,3 +1,28 @@
+USE repforge;
+
+TRUNCATE Bill;
+TRUNCATE MealPlanMeal;
+DELETE FROM MealPlanSection;
+DELETE FROM MealPlan;
+DELETE FROM Meal;
+TRUNCATE PrivateMessage;
+TRUNCATE ForumPostReact;
+
+-- Deal with tricky self-referential table
+SET FOREIGN_KEY_CHECKS=0;
+DELETE FROM ForumPost;
+SET FOREIGN_KEY_CHECKS=1;
+
+DELETE FROM ForumCategory;
+TRUNCATE WorkoutExercise;
+DELETE FROM WorkoutPlanSection;
+DELETE FROM WorkoutPlan;
+DELETE FROM Exercise; 
+TRUNCATE Performance;
+TRUNCATE Macro;
+TRUNCATE Measurement;
+DELETE FROM User;
+
  INSERT INTO User (Id, DisplayName, PasswordHash, ProfilePicture)
  VALUES 
 (1, 'JordanMiles', '$2y$10$MockHashJordanMiles001', null),
@@ -1032,7 +1057,10 @@ VALUES
 (134, 1, 5, 22, NULL, 'Banana and something with a little protein works well for me.', '2026-08-18 16:16:00'),
 (135, 3, 5, 22, NULL, 'I keep pre run food pretty simple and lower in fat so it does not sit heavy.', '2026-08-18 17:02:00'),
 (136, 4, 5, 22, NULL, 'Smaller portions earlier work better for me than eating a full meal close to training.', '2026-08-18 17:48:00'),
-(137, 2, 5, 22, NULL, '@TaylorBrooks that is what I am trying to solve. Enough energy without feeling like I ate a brick.', '2026-08-18 18:34:00');
+(137, 2, 5, 22, NULL, '@TaylorBrooks that is what I am trying to solve. Enough energy without feeling like I ate a brick.', '2026-08-18 18:34:00'),
+
+-- Chain reply to test difficult TRUNCATE/DELETE cases
+(138, 2, 5, 135, NULL, 'test', '2026-08-18 18:34:01');
 
 -- FORUM POST REACTIONS
 INSERT INTO ForumPostReact (UserId, ForumPostId, ReactionType)
