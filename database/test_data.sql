@@ -1255,3 +1255,239 @@ VALUES
 INSERT INTO PrivateMessage (Id, SenderUserId, RecipientUserId, Body, CreatedAt)
 VALUES
 (126, 5, 2, 'hey your upper body setup actually looks pretty solid. what are you doing for shoulders on the second day?', '2026-08-20 23:14:52');
+
+-- Shared Meal Catalog
+INSERT INTO Meal (Id, Name, Calories, Protein, Carbohydrates, Fat, Sugar, Fiber, DemonstrationURL, SourceURL)
+VALUES
+(1, 'Baked Chicken Breast', 220, 42, 0, 5, 0, 0, NULL, NULL),
+(2, 'Baked Chicken Tenders', 240, 40, 5, 7, 1, 0, NULL, NULL),
+(3, 'Rotisserie Chicken Breast', 230, 41, 0, 7, 0, 0, NULL, NULL),
+(4, 'Roasted Chicken Thigh', 260, 31, 0, 15, 0, 0, NULL, NULL),
+(5, 'Lean Ground Turkey', 210, 32, 0, 8, 0, 0, NULL, NULL),
+(6, 'Turkey Burger Patty', 220, 30, 1, 11, 0, 0, NULL, NULL),
+(7, 'Lean Meatloaf Slice', 280, 29, 16, 12, 5, 2, NULL, NULL),
+(8, 'Turkey Meatballs', 260, 30, 12, 10, 4, 1, NULL, NULL),
+(9, 'Grilled Salmon Fillet', 300, 34, 0, 18, 0, 0, NULL, NULL),
+(10, 'Baked Cod Fillet', 190, 38, 0, 3, 0, 0, NULL, NULL),
+(11, 'Grilled Shrimp', 180, 35, 2, 3, 0, 0, NULL, NULL),
+(12, 'Tuna Packet', 120, 26, 0, 1, 0, 0, NULL, NULL),
+(13, 'Lean Beef Strips', 250, 35, 2, 11, 0, 0, NULL, NULL),
+(14, 'Turkey Sausage', 210, 24, 4, 11, 1, 0, NULL, NULL),
+(15, 'Jasmine Rice', 210, 4, 46, 0, 0, 1, NULL, NULL),
+(16, 'Brown Rice', 215, 5, 45, 2, 0, 3, NULL, NULL),
+(17, 'White Rice', 205, 4, 45, 0, 0, 1, NULL, NULL),
+(18, 'Baked Potato', 190, 5, 43, 0, 2, 4, NULL, NULL),
+(19, 'Roasted Sweet Potato', 180, 3, 41, 0, 8, 6, NULL, NULL),
+(20, 'Plain Pasta', 310, 11, 62, 3, 2, 3, NULL, NULL),
+(21, 'Plain Oatmeal', 170, 6, 29, 3, 1, 4, NULL, NULL),
+(22, 'Whole Grain Toast', 180, 8, 32, 3, 4, 5, NULL, NULL),
+(23, 'Flour Tortilla', 170, 5, 30, 4, 1, 2, NULL, NULL),
+(24, 'Rice Cakes', 140, 3, 31, 1, 0, 1, NULL, NULL),
+(25, 'Granola', 210, 5, 34, 7, 10, 4, NULL, NULL),
+(26, 'Steamed Broccoli', 60, 5, 12, 1, 2, 5, NULL, NULL),
+(27, 'Green Beans', 50, 2, 10, 0, 4, 4, NULL, NULL),
+(28, 'Roasted Zucchini', 70, 3, 9, 3, 5, 3, NULL, NULL),
+(29, 'Steamed Asparagus', 50, 5, 8, 0, 3, 4, NULL, NULL),
+(30, 'Corn', 120, 4, 27, 2, 6, 3, NULL, NULL),
+(31, 'Mixed Vegetables', 100, 5, 19, 1, 7, 6, NULL, NULL),
+(32, 'Roasted Brussels Sprouts', 90, 4, 14, 3, 4, 6, NULL, NULL),
+(33, 'Side Salad', 80, 3, 10, 4, 4, 4, NULL, NULL),
+(34, 'Banana', 105, 1, 27, 0, 14, 3, NULL, NULL),
+(35, 'Apple', 95, 0, 25, 0, 19, 4, NULL, NULL),
+(36, 'Fresh Berries', 80, 1, 19, 1, 12, 6, NULL, NULL),
+(37, 'Grapes', 100, 1, 26, 0, 23, 1, NULL, NULL),
+(38, 'Pineapple', 90, 1, 24, 0, 16, 2, NULL, NULL),
+(39, 'Watermelon', 90, 2, 23, 0, 18, 1, NULL, NULL),
+(40, 'Orange', 80, 1, 19, 0, 14, 3, NULL, NULL),
+(41, 'Low Fat Greek Yogurt', 120, 17, 8, 2, 6, 0, NULL, NULL),
+(42, 'Plain Greek Yogurt', 110, 18, 7, 0, 5, 0, NULL, NULL),
+(43, 'Cottage Cheese', 160, 24, 8, 4, 6, 0, NULL, NULL),
+(44, 'Protein Shake', 160, 30, 7, 2, 3, 1, NULL, NULL),
+(45, 'Chocolate Protein Shake', 190, 30, 13, 3, 7, 2, NULL, NULL),
+(46, 'Protein Pudding', 220, 25, 20, 5, 8, 2, NULL, NULL),
+(47, 'Protein Bar', 250, 20, 27, 8, 7, 5, NULL, NULL),
+(48, 'String Cheese', 80, 7, 1, 6, 0, 0, NULL, NULL),
+(49, 'Peanut Butter', 190, 7, 7, 16, 3, 2, NULL, NULL),
+(50, 'Hummus', 100, 4, 9, 6, 1, 3, NULL, NULL),
+(51, 'Marinara Sauce', 90, 2, 14, 3, 8, 3, NULL, NULL),
+(52, 'Teriyaki Sauce', 70, 1, 16, 0, 13, 0, NULL, NULL),
+(53, 'Gochujang Sauce', 60, 1, 13, 0, 8, 1, NULL, NULL),
+(54, 'Light Caesar Dressing', 80, 1, 4, 7, 2, 0, NULL, NULL),
+(55, 'Avocado', 120, 2, 6, 11, 0, 5, NULL, NULL),
+(56, 'Turkey and Provolone Sandwich', 430, 34, 42, 14, 6, 6, NULL, NULL),
+(57, 'Chicken Avocado Wrap', 520, 40, 45, 21, 5, 8, NULL, NULL),
+(58, 'Turkey Hummus Wrap', 460, 33, 48, 16, 5, 7, NULL, NULL),
+(59, 'Greek Yogurt and Granola', 310, 23, 42, 7, 19, 4, NULL, NULL),
+(60, 'Peanut Butter Banana Toast', 350, 13, 46, 14, 13, 6, NULL, NULL),
+(61, 'Chicken and Rice Bowl', 520, 38, 62, 12, 5, 5, NULL, NULL),
+(62, 'Teriyaki Chicken Rice Bowl', 590, 46, 72, 12, 15, 4, NULL, NULL),
+(63, 'Turkey Taco Rice Bowl', 540, 45, 58, 14, 6, 8, NULL, NULL),
+(64, 'Chicken Burrito Bowl', 610, 50, 68, 16, 7, 10, NULL, NULL),
+(65, 'Chicken Pesto Pasta', 640, 47, 66, 21, 5, 6, NULL, NULL),
+(66, 'Salmon Rice and Broccoli', 620, 42, 58, 24, 4, 7, NULL, NULL),
+(67, 'Chicken Stir Fry with Rice', 570, 46, 65, 14, 11, 7, NULL, NULL),
+(68, 'Lean Beef Taco Bowl', 580, 43, 52, 22, 6, 9, NULL, NULL),
+(69, 'Grilled Chicken Caesar Wrap', 500, 43, 42, 18, 4, 5, NULL, NULL),
+(70, 'Turkey Chili with Rice', 570, 44, 64, 14, 8, 10, NULL, NULL);
+
+-- User 1 - JordanMiles
+-- Meal Plans
+INSERT INTO MealPlan (Id, UserId, Title)
+VALUES
+(1, 1, 'Training Day'),
+(2, 1, 'Lower Day High Carb'),
+(3, 1, 'Active Recovery Day');
+
+-- Meal Plan Sections
+INSERT INTO MealPlanSection (Id, MealPlanId, Name, OrderInMealPlan)
+VALUES
+(1, 1, 'Breakfast', 1),
+(2, 1, 'Lunch', 2),
+(3, 1, 'Pre-Workout', 3),
+(4, 1, 'Dinner', 4),
+(5, 1, 'Snack', 5),
+(6, 2, 'Breakfast', 1),
+(7, 2, 'Lunch', 2),
+(8, 2, 'Pre-Workout', 3),
+(9, 2, 'Dinner', 4),
+(10, 2, 'Snack', 5),
+(11, 3, 'Breakfast', 1),
+(12, 3, 'Lunch', 2),
+(13, 3, 'Dinner', 3),
+(14, 3, 'Snack', 4);
+
+-- Meal Plan Meals
+INSERT INTO MealPlanMeal (Id, MealId, MealPlanSectionId, OrderInSection)
+VALUES
+(1, 21, 1, 1),
+(2, 41, 1, 2),
+(3, 34, 1, 3),
+(4, 1, 2, 1),
+(5, 15, 2, 2),
+(6, 26, 2, 3),
+(7, 53, 2, 4),
+(8, 44, 3, 1),
+(9, 37, 3, 2),
+(10, 61, 4, 1),
+(11, 2, 4, 2),
+(12, 46, 5, 1),
+(13, 21, 6, 1),
+(14, 34, 6, 2),
+(15, 42, 6, 3),
+(16, 49, 6, 4),
+(17, 3, 7, 1),
+(18, 17, 7, 2),
+(19, 30, 7, 3),
+(20, 24, 8, 1),
+(21, 34, 8, 2),
+(22, 8, 9, 1),
+(23, 20, 9, 2),
+(24, 51, 9, 3),
+(25, 28, 9, 4),
+(26, 45, 10, 1),
+(27, 42, 11, 1),
+(28, 36, 11, 2),
+(29, 25, 11, 3),
+(30, 56, 12, 1),
+(31, 33, 12, 2),
+(32, 9, 13, 1),
+(33, 18, 13, 2),
+(34, 27, 13, 3),
+(35, 43, 14, 1),
+(36, 38, 14, 2);
+
+-- User 2 - AlexRivera
+-- Meal Plans
+INSERT INTO MealPlan (Id, UserId, Title)
+VALUES
+(4, 2, 'Weekday Meal Plan'),
+(5, 2, 'Weekend Meal Plan');
+
+-- Meal Plan Sections
+INSERT INTO MealPlanSection (Id, MealPlanId, Name, OrderInMealPlan)
+VALUES
+(15, 4, 'Breakfast', 1),
+(16, 4, 'Lunch', 2),
+(17, 4, 'Dinner', 3),
+(18, 4, 'Snack', 4),
+(19, 5, 'Breakfast', 1),
+(20, 5, 'Lunch', 2),
+(21, 5, 'Dinner', 3),
+(22, 5, 'Snack', 4);
+
+-- Meal Plan Meals
+INSERT INTO MealPlanMeal (Id, MealId, MealPlanSectionId, OrderInSection)
+VALUES
+(37, 21, 15, 1),
+(38, 41, 15, 2),
+(39, 35, 15, 3),
+(40, 69, 16, 1),
+(41, 7, 17, 1),
+(42, 18, 17, 2),
+(43, 27, 17, 3),
+(44, 47, 18, 1),
+(45, 59, 19, 1),
+(46, 34, 19, 2),
+(47, 58, 20, 1),
+(48, 67, 21, 1),
+(49, 11, 21, 2),
+(50, 48, 22, 1),
+(51, 35, 22, 2);
+
+
+-- User 3 - TaylorBrooks
+-- Meal Plans
+INSERT INTO MealPlan (Id, UserId, Title)
+VALUES
+(6, 3, 'Long Run Day');
+
+-- Meal Plan Sections
+INSERT INTO MealPlanSection (Id, MealPlanId, Name, OrderInMealPlan)
+VALUES
+(23, 6, 'Breakfast', 1),
+(24, 6, 'Pre-Run', 2),
+(25, 6, 'Post-Run', 3),
+(26, 6, 'Lunch', 4),
+(27, 6, 'Snack', 5),
+(28, 6, 'Dinner', 6);
+
+-- Meal Plan Meals
+INSERT INTO MealPlanMeal (Id, MealId, MealPlanSectionId, OrderInSection)
+VALUES
+(52, 21, 23, 1),
+(53, 41, 23, 2),
+(54, 34, 23, 3),
+(55, 49, 23, 4),
+(56, 24, 24, 1),
+(57, 34, 24, 2),
+(58, 44, 25, 1),
+(59, 37, 25, 2),
+(60, 64, 26, 1),
+(61, 59, 27, 1),
+(62, 65, 28, 1),
+(63, 1, 28, 2);
+
+-- User 4 - MorganReed
+-- Intentionally incomplete: Dinner and Snack sections have no MealPlanMeal rows.
+-- Meal Plans
+INSERT INTO MealPlan (Id, UserId, Title)
+VALUES
+(7, 4, 'Simple Weekly Meals');
+
+-- Meal Plan Sections
+INSERT INTO MealPlanSection (Id, MealPlanId, Name, OrderInMealPlan)
+VALUES
+(29, 7, 'Breakfast', 1),
+(30, 7, 'Lunch', 2),
+(31, 7, 'Dinner', 3),
+(32, 7, 'Snack', 4);
+
+-- Meal Plan Meals
+INSERT INTO MealPlanMeal (Id, MealId, MealPlanSectionId, OrderInSection)
+VALUES
+(64, 42, 29, 1),
+(65, 36, 29, 2),
+(66, 58, 30, 1);
+
+-- User 5 - CaseyStone
+-- Intentionally has no MealPlan records.
