@@ -1,3 +1,8 @@
+<?php
+
 /**
-* This is the user login or sign-up page.
-*/
+ * Authentication page.
+ *
+ * Allows users to sign in, register, or recover a forgotten password.
+ */
+

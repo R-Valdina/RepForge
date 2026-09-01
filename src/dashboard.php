@@ -1,3 +1,7 @@
+<?php
+
 /**
-* This is the dashboard page, where users land once they log in.
-*/
+ * Dashboard page.
+ *
+ * Displays the user's main RepForge dashboard.
+ */
