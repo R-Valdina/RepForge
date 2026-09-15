@@ -11,15 +11,14 @@
 <head>
    <meta charset="utf-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>RepForge Dashboard</title>
+   <title>Dashboard</title>
 </head>
 
 <body>
 <header>
-    <h1>RepForge Dashboard</h1>
+    <h1>Dashboard</h1>
     <nav>
         <ul>
-            <li><a href="dashboard.php">Dashboard</a></li>
             <li><a href="workoutplan.php">Workout Plan</a></li>
             <li><a href="mealplan.php">Meal Plan</a></li>
             <li><a href="measurements.php">Measurements</a></li>
