@@ -5,3 +5,5 @@
  *
  * Displays the user's main RepForge dashboard.
  */
+?>
+
