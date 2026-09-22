@@ -9,10 +9,48 @@ $router->setBasePath('/repforge/');
 
 
 // This is a route mapping. We will have a bunch of these
-$router->map('GET', '', function () {
+$router->map('GET', 'landing', function () {
 	require __DIR__ . '/landing.php';
 });
-
+$router->map('GET', 'navigation', function () {
+	require __DIR__ . '/navigation.php';
+});
+$router->map('GET', 'notifications', function () {
+	require __DIR__ . '/notifications.php';
+});
+$router->map('GET', 'support', function () {
+	require __DIR__ . '/support.php';
+});
+$router->map('GET', 'forum', function () {
+	require __DIR__ . '/forum/index.php';
+});
+$router->map('GET', 'macros', function (){
+	require __DIR__ . '/macros/index.php';
+});
+$router->map('GET', 'mealplan', function (){
+	require __DIR__ . '/mealplan/index.php';
+});
+$router->map('GET', 'measurements', function (){
+	require __DIR__ . '/measurements/index.php';
+});
+$router->map('GET', 'message', function (){
+	require __DIR__ . '/message/index.php';
+});
+$router->map('GET', 'performance', function (){
+	require __DIR__ . '/performance/view.php';
+});
+$router->map('GET', 'user', function (){
+	require __DIR__ . '/user/view.php';
+});
+$router->map('GET', 'login', function (){
+	require __DIR__ . '/user/login.php';
+});
+$router->map('GET', 'dashboard', function (){
+	require __DIR__ . '/user/dashboard.php';
+});
+$router->map('GET', 'workoutplan', function (){
+	require __DIR__ . '/workoutplan/index.php';
+});
 
 $match = $router->match();
 
