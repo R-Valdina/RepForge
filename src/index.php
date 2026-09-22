@@ -3,7 +3,7 @@ require_once('vendor/autoload.php');
 
 $router = new AltoRouter();
 
-// WE SHOULD AGREE on a base path, or load it from a .ini file!
+// WE SHOULD AGREE on a base path or load it from an INI file!
 // Not doing this will make things break later
 $router->setBasePath('/repforge/');
 
