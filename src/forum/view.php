@@ -18,16 +18,16 @@
     <h1>Forums</h1>
     <nav>
         <ul>
-            <li><a href="dashboard.php">Dashboard</a></li>
-            <li><a href="workoutplan.php">Workout Plan</a></li>
-            <li><a href="mealplan.php">Meal Plan</a></li>
-            <li><a href="measurements.php">Measurements</a></li>
-            <li><a href="macros.php">Macros</a></li>
-            <li><a href="performance.php">Performance</a></li>
-            <li><a href="notifications.php">Notifications</a></li>
-            <li><a href="messages.php">Messaging</a></li>
-            <li><a href="userprofile.php">Profile</a></li>
-            <li><a href="support.php">Support</a></li>
+            <li><a href="/repforge/dashboard">Dashboard</a></li>
+            <li><a href="/repforge/workoutplan">Workout Plan</a></li>
+            <li><a href="/repforge/mealplan">Meal Plan</a></li>
+            <li><a href="/repforge/measurements">Measurements</a></li>
+            <li><a href="/repforge/macros">Macros</a></li>
+            <li><a href="/repforge/performance">Performance</a></li>
+            <li><a href="/repforge/notifications">Notifications</a></li>
+            <li><a href="/repforge/messages">Messaging</a></li>
+            <li><a href="/repforge/userprofile">Profile</a></li>
+            <li><a href="/repforge/support">Support</a></li>
         </ul>
     </nav>
 </header>

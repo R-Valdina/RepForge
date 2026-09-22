@@ -19,13 +19,13 @@
 <header>
     <nav>
         <ul>
-            <li><a href="index.php">Home</a></li>
+            <li><a href="/repforge/landing">Home</a></li>
         </ul>
     </nav>
 </header>
 <main>
     <h1> Login</h1>
-    <form action="dashboard.php" method="get">
+    <form action="/repforge/dashboard" method="get">
         <label for="DisplayName">Display Name</label>
         <input
             type="text"

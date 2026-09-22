@@ -56,7 +56,7 @@ $match = $router->match();
 
 if( is_array($match) && is_callable( $match['target'] ) ) {
 
-	// We will turn this into plates render commands later
+	// We will turn this into plate render commands later
 	// For now, just process the static page
 	call_user_func_array( $match['target'], $match['params'] );
 	exit;

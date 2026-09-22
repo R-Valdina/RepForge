@@ -20,7 +20,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#features">Features</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="login.php">Login</a></li>
+            <li><a href="/repforge/login">Login</a></li>
         </ul>
     </nav>
 </header>
@@ -51,7 +51,7 @@
         </p>
         <p> The goal of RepForge is to provide useful fitness tools without
             unnecessary complexity. The platform is intended to remain accessible
-            and free so users can focus on their progress instead of paying for
+            and free, so users can focus on their progress instead of paying for
             basic tools they need to reach their goals.
         </p>
     </section>
