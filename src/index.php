@@ -12,6 +12,9 @@ $router->setBasePath('/repforge/');
 $router->map('GET', '', function () {
 	require __DIR__ . '/landing.php';
 });
+$router->map('GET', 'index.php', function () {
+	require __DIR__ . '/landing.php';
+});
 $router->map('GET', 'navigation', function () {
 	require __DIR__ . '/navigation.php';
 });
