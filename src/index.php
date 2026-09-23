@@ -9,7 +9,7 @@ $router->setBasePath('/repforge/');
 
 
 // This is a route mapping. We will have a bunch of these
-$router->map('GET', 'landing', function () {
+$router->map('GET', '', function () {
 	require __DIR__ . '/landing.php';
 });
 $router->map('GET', 'navigation', function () {
