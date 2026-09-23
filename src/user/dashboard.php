@@ -5,6 +5,7 @@
  *
  * Displays the user's main RepForge dashboard.
  */
+require_once __DIR__ . '/../navigation.php';
 ?>
 <!doctype html>
 <html lang="en">

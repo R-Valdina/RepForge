@@ -24,25 +24,25 @@ $router->map('GET', 'notifications', function () {
 $router->map('GET', 'support', function () {
 	require __DIR__ . '/support.php';
 });
-$router->map('GET', 'forum', function () {
+$router->map('GET', 'forum/', function () {
 	require __DIR__ . '/forum/index.php';
 });
-$router->map('GET', 'macros', function (){
+$router->map('GET', 'macros/', function (){
 	require __DIR__ . '/macros/index.php';
 });
-$router->map('GET', 'mealplan', function (){
+$router->map('GET', 'mealplan/', function (){
 	require __DIR__ . '/mealplan/index.php';
 });
-$router->map('GET', 'measurements', function (){
+$router->map('GET', 'measurements/', function (){
 	require __DIR__ . '/measurements/index.php';
 });
-$router->map('GET', 'message', function (){
+$router->map('GET', 'message/', function (){
 	require __DIR__ . '/message/index.php';
 });
-$router->map('GET', 'performance', function (){
+$router->map('GET', 'performance/', function (){
 	require __DIR__ . '/performance/view.php';
 });
-$router->map('GET', 'user', function (){
+$router->map('GET', 'user/', function (){
 	require __DIR__ . '/user/view.php';
 });
 $router->map('GET', 'login', function (){
@@ -51,7 +51,7 @@ $router->map('GET', 'login', function (){
 $router->map('GET', 'dashboard', function (){
 	require __DIR__ . '/user/dashboard.php';
 });
-$router->map('GET', 'workoutplan', function (){
+$router->map('GET', 'workoutplan/', function (){
 	require __DIR__ . '/workoutplan/index.php';
 });
 
