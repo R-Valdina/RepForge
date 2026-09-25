@@ -9,13 +9,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
     <title>RepForge</title>
+
 </head>
 
-<body>
+<body class="landing-page"  >
 
-<header>
-    <nav>
+<header class="landing-header">
+    <nav class="landing-navigation">
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#features">Features</a></li>
@@ -25,7 +27,7 @@
     </nav>
 </header>
 
-<main>
+<main class="landing-content">
     <section id="home">
         <h1>Welcome to RepForge</h1>
         <p>This is the home page of our website.</p>

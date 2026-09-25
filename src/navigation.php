@@ -4,6 +4,7 @@
 
 <nav class="main-navigation">
     <ul>
+        <li><a href="/repforge/dashboard">Dashboard</a></li>
         <li><a href="/repforge/workoutplan">Workout Plan</a></li>
         <li><a href="/repforge/mealplan">Meal Plan</a></li>
         <li><a href="/repforge/measurements">Measurements</a></li>
