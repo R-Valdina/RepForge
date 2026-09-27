@@ -1,6 +1,7 @@
 /* This is preventing a scroll bar. making the content fit to the screen */
 * {
     box-sizing: border-box;
+	font-family: sans-serif;
 }
 
 /* Main / Side Navigation
@@ -8,25 +9,20 @@ This is just generic and here to give general framing of the screens for now
  */
 
 .main-navigation {
-    position: fixed;
-    top: 100px;
-    left: 30px;
 
-    width: 200px;
+	width: 200px;
+	
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
 }
 
-.main-navigation ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.main-navigation li {
-    margin-bottom: 10px;
-}
-
-.main-navigation a {
-    text-decoration: none;
+nav a {
+	text-decoration: none;
+	color: #008;
+	font-weight: bold;
+	min-height: 32px;
+	min-width: 120px;
 }
 
 
@@ -35,52 +31,45 @@ This is just generic and here to give general framing of the screens for now
 */
 
 .secondary-navigation {
-    position: fixed;
-    top: 30px;
-    right: 30px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 30px;
+	padding: 10px;
+	justify-content: flex-end;
 }
 
-.secondary-navigation ul {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.secondary-navigation {
+	text-align: center;
 }
-
-.secondary-navigation a {
-    text-decoration: none;
-}
-
 
 /*Landing Page */
 
 .landing-page {
-    margin: 0;
+	margin: 0;
 }
 
 .landing-header {
-    width: 100%;
-    padding: 20px 30px;
+	width: 100%;
+	padding: 20px 30px;
 }
 
 .landing-navigation ul {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 25px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 25px;
 
-    list-style: none;
-    margin: 0;
-    padding: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 .landing-navigation a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .landing-content {
-    padding: 40px;
+	padding: 40px;
 }

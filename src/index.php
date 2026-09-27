@@ -1,59 +1,72 @@
 <?php declare(strict_types = 1);
 require_once('vendor/autoload.php');
 
+// Pass directly-hosted files of CERTAIN types through. Should never include php or ini
+if (file_exists($_SERVER['SCRIPT_FILENAME'])) {
+    $file_ext = pathinfo($_SERVER['SCRIPT_FILENAME'], PATHINFO_EXTENSION);
+    if ($file_ext == 'css' || $file_ext == 'png') {
+        return;
+    }
+}
+
 $router = new AltoRouter();
 
 // WE SHOULD AGREE on a base path or load it from an INI file!
 // Not doing this will make things break later
-$router->setBasePath('/repforge/');
+$basePath = '/repforge/';
+$router->setBasePath($basePath);
 
 
 // This is a route mapping. We will have a bunch of these
 $router->map('GET', '', function () {
-	require __DIR__ . '/landing.php';
-});
-$router->map('GET', 'index.php', function () {
-	require __DIR__ . '/landing.php';
-});
-$router->map('GET', 'navigation', function () {
-	require __DIR__ . '/navigation.php';
-});
+	global $router;
+	require 'landing.php';
+}, 'landing');
+
 $router->map('GET', 'notifications', function () {
-	require __DIR__ . '/notifications.php';
-});
+	global $router;
+	require 'notifications.php';
+}, 'view_notifications');
+
 $router->map('GET', 'support', function () {
-	require __DIR__ . '/support.php';
-});
+	global $router;
+	require 'support.php';
+}, 'support');
+
 $router->map('GET', 'forum/', function () {
-	require __DIR__ . '/forum/index.php';
-});
-$router->map('GET', 'macros/', function (){
+	global $router;
+	require 'forum/index.php';
+}, 'forum_index');
+
+$router->map('GET', 'macros/', function () {
 	require __DIR__ . '/macros/index.php';
 });
-$router->map('GET', 'mealplan/', function (){
+$router->map('GET', 'mealplan/', function () {
 	require __DIR__ . '/mealplan/index.php';
-});
-$router->map('GET', 'measurements/', function (){
+}, 'mealplan_index');
+$router->map('GET', 'measurements/', function () {
 	require __DIR__ . '/measurements/index.php';
 });
-$router->map('GET', 'message/', function (){
+$router->map('GET', 'message/', function () {
 	require __DIR__ . '/message/index.php';
 });
-$router->map('GET', 'performance/', function (){
+$router->map('GET', 'performance/', function () {
 	require __DIR__ . '/performance/view.php';
 });
-$router->map('GET', 'user/', function (){
+$router->map('GET', 'user/', function () {
 	require __DIR__ . '/user/view.php';
 });
-$router->map('GET', 'login', function (){
+$router->map('GET', 'login', function () {
 	require __DIR__ . '/user/login.php';
 });
-$router->map('GET', 'dashboard', function (){
+$router->map('GET', 'dashboard', function () {
+	global $router, $basePath;
 	require __DIR__ . '/user/dashboard.php';
-});
-$router->map('GET', 'workoutplan/', function (){
+}, 'dashboard');
+$router->map('GET', 'workoutplan/', function () {
+	global $router;
 	require __DIR__ . '/workoutplan/index.php';
-});
+}, 'workoutplan_index');
 
 $match = $router->match();
 

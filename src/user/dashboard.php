@@ -1,26 +1,26 @@
 <?php
-
 /**
  * Dashboard page.
  *
  * Displays the user's main RepForge dashboard.
  */
-require_once __DIR__ . '/../navigation.php';
 ?>
 <!doctype html>
 <html lang="en">
 <head>
    <meta charset="utf-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="<?= $basePath ?>css/app.css">
    <title>Dashboard</title>
 </head>
 
 <body>
-<header>
-    <h1>Dashboard</h1>
+	<?php require_once 'nav_top.php'; ?>
 
-</header>
+	<h1>Dashboard</h1>
+	<!-- Put this in the body so it doesn't screw up your head! -->
+	<!-- import, import_once, require, and require_once all pour the file right where you use it -->
+	<?php require_once 'nav_side.php'; ?>
 </body>
 </html>
 
