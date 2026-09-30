@@ -1,5 +1,6 @@
 <?php
-
+/** @var string $basePath */
+/** @var AltoRouter $router */
 /**
  * Authentication page.
  *
@@ -11,7 +12,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="<?= $basePath ?>css/app.css">
     <title>Login</title>
 </head>
 
@@ -20,13 +21,13 @@
 <header>
     <nav>
         <ul>
-            <li><a href="/repforge/landing">Home</a></li>
+            <li><a href="<?= $router->generate('landing') ?>">Home</a></li>
         </ul>
     </nav>
 </header>
 <main>
     <h1> Login</h1>
-    <form action="/repforge/dashboard" method="get">
+    <form action="<?= $router->generate('dashboard') ?>" method="get">
         <label for="DisplayName">Display Name</label>
         <input
             type="text"

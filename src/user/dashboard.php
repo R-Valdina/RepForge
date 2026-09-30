@@ -1,6 +1,7 @@
 <?php
-/** what I understand this is doing is telling this page there is already a basepath and its a string */
+/** This tells PhpStorm that $basePath already exists and is a string. */
 /** @var string $basePath */
+/** @var AltoRouter $router */
 
 /**
  * Dashboard page.
@@ -19,6 +20,8 @@
 
 <body>
 	<?php require_once 'nav_top.php'; ?>
+    <div class="page-layout">
+
 
 	<h1>Dashboard</h1>
 	<!-- Put this in the body so it doesn't screw up your head! -->

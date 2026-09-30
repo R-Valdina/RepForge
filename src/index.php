@@ -25,63 +25,63 @@ $router->map('GET', '', function () {
 }, 'landing');
 
 $router->map('GET', 'notifications', function () {
-	global $router;
+	global $router, $basePath;
 	require 'notifications.php';
 }, 'view_notifications');
 
 $router->map('GET', 'support', function () {
-	global $router;
+	global $router, $basePath;
 	require 'support.php';
 }, 'support');
 
 $router->map('GET', 'forum/', function () {
-	global $router;
+	global $router, $basePath;
 	require 'forum/index.php';
 }, 'forum_index');
 
 $router->map('GET', 'macros/', function () {
-	global $router;
+	global $router, $basePath;
 	require 'macros/index.php';
 }, 'macros_index');
 
 $router->map('GET', 'mealplan/', function () {
-	global $router;
+	global $router, $basePath;
 	require 'mealplan/index.php';
 }, 'mealplan_index');
 
 $router->map('GET', 'measurements/', function () {
-	global $router;
+	global $router, $basePath;
 	require 'measurements/index.php';
 }, 'measurements_index');
 
 $router->map('GET', 'message/', function () {
-	global $router;
+	global $router, $basePath;
 	require 'message/index.php';
 }, 'message_index');
 
 $router->map('GET', 'performance/', function () {
-	global $router;
+	global $router, $basePath;
 	require 'performance/view.php';
 }, 'performance_view');
 
 $router->map('GET', 'user/', function () {
-	global $router;
+	global $router, $basePath;
 	require 'user/view.php';
 }, 'user_view');
 
 $router->map('GET', 'login', function () {
-	global $router;
+	global $router, $basePath;
 	require 'user/login.php';
 }, 'login');
 
 $router->map('GET', 'dashboard', function () {
 	global $router, $basePath;
-	require __DIR__ . '/user/dashboard.php';
+	require 'user/dashboard.php';
 }, 'dashboard');
 
 $router->map('GET', 'workoutplan/', function () {
-	global $router;
-	require __DIR__ . '/workoutplan/index.php';
+	global $router, $basePath	;
+	require 'workoutplan/index.php';
 }, 'workoutplan_index');
 
 $match = $router->match();
