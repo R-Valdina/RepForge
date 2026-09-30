@@ -1,6 +1,7 @@
 <?php declare(strict_types = 1);
 require_once('vendor/autoload.php');
 
+
 // Pass directly-hosted files of CERTAIN types through. Should never include php or ini
 if (file_exists($_SERVER['SCRIPT_FILENAME'])) {
     $file_ext = pathinfo($_SERVER['SCRIPT_FILENAME'], PATHINFO_EXTENSION);
@@ -19,7 +20,7 @@ $router->setBasePath($basePath);
 
 // This is a route mapping. We will have a bunch of these
 $router->map('GET', '', function () {
-	global $router;
+	global $router, $basePath;
 	require 'landing.php';
 }, 'landing');
 
@@ -39,30 +40,45 @@ $router->map('GET', 'forum/', function () {
 }, 'forum_index');
 
 $router->map('GET', 'macros/', function () {
-	require __DIR__ . '/macros/index.php';
-});
+	global $router;
+	require 'macros/index.php';
+}, 'macros_index');
+
 $router->map('GET', 'mealplan/', function () {
-	require __DIR__ . '/mealplan/index.php';
+	global $router;
+	require 'mealplan/index.php';
 }, 'mealplan_index');
+
 $router->map('GET', 'measurements/', function () {
-	require __DIR__ . '/measurements/index.php';
-});
+	global $router;
+	require 'measurements/index.php';
+}, 'measurements_index');
+
 $router->map('GET', 'message/', function () {
-	require __DIR__ . '/message/index.php';
-});
+	global $router;
+	require 'message/index.php';
+}, 'message_index');
+
 $router->map('GET', 'performance/', function () {
-	require __DIR__ . '/performance/view.php';
-});
+	global $router;
+	require 'performance/view.php';
+}, 'performance_view');
+
 $router->map('GET', 'user/', function () {
-	require __DIR__ . '/user/view.php';
-});
+	global $router;
+	require 'user/view.php';
+}, 'user_view');
+
 $router->map('GET', 'login', function () {
-	require __DIR__ . '/user/login.php';
-});
+	global $router;
+	require 'user/login.php';
+}, 'login');
+
 $router->map('GET', 'dashboard', function () {
 	global $router, $basePath;
 	require __DIR__ . '/user/dashboard.php';
 }, 'dashboard');
+
 $router->map('GET', 'workoutplan/', function () {
 	global $router;
 	require __DIR__ . '/workoutplan/index.php';

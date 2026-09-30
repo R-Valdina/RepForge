@@ -1,4 +1,7 @@
 <?php
+/** what I understand this is doing is telling this page there is already a basepath and its a string */
+/** @var string $basePath */
+
 /**
  * Dashboard page.
  *

@@ -1,13 +1,14 @@
 <?php
+/** @var AltoRouter $router */
 /** Navigation to be called repetitively  */
 ?>
 
 <nav class="main-navigation">
 	<a href="<?= $router->generate('dashboard') ?>">Dashboard</a>
 	<a href="<?= $router->generate('workoutplan_index') ?>">Workout Plan</a>
-	<a href="/repforge/mealplan">Meal Plan</a>
-	<a href="/repforge/measurements">Measurements</a>
-	<a href="/repforge/macros">Macros</a>
-	<a href="/repforge/performance">Performance</a>
-	<a href="/repforge/forum">Community</a>
+	<a href="<?= $router->generate('mealplan_index') ?>">Meal Plan</a>
+	<a href="<?= $router->generate('measurements_index') ?>">Measurements</a>
+	<a href="<?= $router->generate('macros_index') ?>">Macros</a>
+	<a href="<?= $router->generate('performance_view') ?>">Performance</a>
+	<a href="<?= $router->generate('forum_index') ?>">Community</a>
 </nav>
