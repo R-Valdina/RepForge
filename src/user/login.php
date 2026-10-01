@@ -25,26 +25,38 @@
         </ul>
     </nav>
 </header>
-<main>
-    <h1> Login</h1>
-    <form action="<?= $router->generate('dashboard') ?>" method="get">
-        <label for="DisplayName">Display Name</label>
-        <input
-            type="text"
-            id="DisplayName"
-            name="DisplayName"
-            required
-        >
-        <label for="password">Password</label>
-        <input
-            type="password"
-            id="password"
-            name="password"
-            required
-        >
-        <button type="submit">Login</button>
-    </form>
+<main class="login-page">
+    <div class="login-container">
+        <h1 class="brand-name">RepForge</h1>
+        <section class="login-box">
+            <h2> Login</h2>
+            <form action="<?= $router->generate('dashboard') ?>" method="get">
+                <div class="form-group">
+                    <label for="DisplayName">Display Name</label>
+                    <input
+                            type="text"
+                            id="DisplayName"
+                            name="DisplayName"
+                            required
+                    >
+                    <label for="password">Password</label>
+                    <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            required
+                    >
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <div class="login-links">
+                <a href="#">Forgot Password?</a>
+                <a href="#">Create Account</a>
+            </div>
+        </section>
+    </div>
 </main>
+
 </body>
 </html>
 

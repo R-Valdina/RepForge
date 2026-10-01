@@ -1,7 +1,7 @@
 /* This is preventing a scroll bar. making the content fit to the screen */
 * {
     box-sizing: border-box;
-	font-family: sans-serif;
+    font-family: sans-serif;
 }
 
 /* Main / Side Navigation
@@ -10,19 +10,19 @@ This is just generic and here to give general framing of the screens for now
 
 .main-navigation {
 
-	width: 200px;
-	
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
+    width: 200px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 nav a {
-	text-decoration: none;
-	color: #008;
-	font-weight: bold;
-	min-height: 32px;
-	min-width: 120px;
+    text-decoration: none;
+    color: #008;
+    font-weight: bold;
+    min-height: 32px;
+    min-width: 120px;
 }
 
 
@@ -31,45 +31,108 @@ This is just generic and here to give general framing of the screens for now
 */
 
 .secondary-navigation {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	gap: 30px;
-	padding: 10px;
-	justify-content: flex-end;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 10px;
+    justify-content: flex-end;
 }
 
 .secondary-navigation {
-	text-align: center;
+    text-align: center;
 }
 
 /*Landing Page */
 
 .landing-page {
-	margin: 0;
+    margin: 0;
 }
 
 .landing-header {
-	width: 100%;
-	padding: 20px 30px;
+    width: 100%;
+    padding: 20px 30px;
 }
 
 .landing-navigation ul {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	gap: 25px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
 
-	list-style: none;
-	margin: 0;
-	padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .landing-navigation a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 .landing-content {
-	padding: 40px;
+    padding: 40px;
+}
+
+/* Login Page */
+.login-page {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.brand-name {
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 32px;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 32px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.login-box h2 {
+    margin-top: 0;
+    text-align: center;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    margin-bottom: 6px;
+}
+
+.form-group input {
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    margin-bottom: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.10);
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+}
+
+.login-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
 }
