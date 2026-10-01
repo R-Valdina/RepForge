@@ -136,3 +136,164 @@ This is just generic and here to give general framing of the screens for now
     justify-content: space-between;
     margin-top: 20px;
 }
+
+/*Shared App Layout */
+.page-layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 18px;
+
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.navigation-box,
+.widget-box,
+.content-box {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.navigation-box,
+.widget-box {
+    padding: 18px;
+}
+
+.widget-box {
+    min-height: 220px;
+}
+
+.content-box {
+    min-width: 0;
+    min-height: 620px;
+    padding: 24px;
+}
+
+/* Mobile Layout
+When the screen is 600px wide or smaller:
+
+- Hide the side widget
+- Let the current page content use the full screen width
+- Keep the top navigation visible
+- Move the side navigation to the bottom of the screen
+- Keep the bottom navigation visible while scrolling
+- Display navigation links in two rows so the full names can remain unchanged
+- Bottom navigation will later become icons or more like the mock ups
+- Right now navigation is fixed until we can discuss
+*/
+@media (max-width: 600px) {
+
+    /* Removes the desktop two-column layout and leaves space
+       for the fixed top and bottom navigation. */
+    .page-layout {
+        display: block;
+        padding: 70px 12px 100px;
+    }
+
+    /* Allows the navigation and widget children to behave
+       independently from the desktop left column. */
+    .left-column {
+        display: contents;
+    }
+
+    /* The desktop widget is not shown on mobile.
+    For now we may want to display main content then scrolling reveal the widget content. */
+    .widget-box {
+        display: none;
+    }
+
+    /* Main page content takes the full available mobile width. */
+    .content-box {
+        width: 100%;
+        min-height: 0;
+        padding: 16px;
+    }
+
+    /* Keeps the secondary navigation in one small row at the top.
+   This stays visible between routed pages so the app feels continuous. */
+    .secondary-navigation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        width: 100%;
+        height: 48px;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        justify-content: flex-end;
+        align-items: center;
+
+        gap: 8px;
+        padding: 6px 12px;
+
+        background: #fff;
+
+        z-index: 1000;
+    }
+
+    /* Makes the top navigation smaller on mobile so all four
+       options remain on a single line. */
+    .secondary-navigation a {
+        min-width: 0;
+        min-height: 0;
+
+        padding: 4px 6px;
+
+        font-size: 11px;
+        white-space: nowrap;
+    }
+
+    /* Moves the desktop side navigation to the bottom of the screen
+       and keeps it visible while the current page content scrolls. */
+    .navigation-box {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        width: 100%;
+        padding: 8px 6px;
+
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+
+        z-index: 1000;
+    }
+
+    /* Changes the desktop vertical navigation into a grid
+       so the full navigation names can wrap into two rows.
+       This will change when we add in the icons. */
+    .main-navigation {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4px;
+    }
+
+    /* Shrinks the mobile navigation links so they fit
+       without changing the actual navigation names. */
+    .navigation-box nav a {
+        min-width: 0;
+        min-height: 0;
+
+        padding: 6px 2px;
+
+        font-size: 11px;
+        text-align: center;
+    }
+}
