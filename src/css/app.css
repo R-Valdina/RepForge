@@ -140,11 +140,10 @@ This is just generic and here to give general framing of the screens for now
 /*Shared App Layout */
 .page-layout {
     display: grid;
-    grid-template-columns: 220px 1fr;
-    gap: 18px;
+    grid-template-columns: 12% 78%;
+    gap: 5%;
 
-    max-width: 1400px;
-    margin: 0 auto;
+    width: 100%;
     padding: 24px;
 }
 
@@ -176,6 +175,11 @@ This is just generic and here to give general framing of the screens for now
     min-width: 0;
     min-height: 620px;
     padding: 24px;
+    max-width: 100%;
+}
+
+.content-box h1 {
+    text-align: center;
 }
 
 /* Mobile Layout
