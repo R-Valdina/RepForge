@@ -140,11 +140,12 @@ This is just generic and here to give general framing of the screens for now
 /*Shared App Layout */
 .page-layout {
     display: grid;
-    grid-template-columns: 12% 78%;
-    gap: 5%;
+    grid-template-columns: 22% 72%;
+    gap: 2%;
 
     width: 100%;
     padding: 24px;
+    justify-content: center;
 }
 
 .left-column {
