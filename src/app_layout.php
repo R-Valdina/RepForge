@@ -3,7 +3,6 @@
 
 /** @var string $basePath */
 /** @var AltoRouter $router */
-/** @var string $content */
 
 ?>
 
@@ -22,14 +21,14 @@
 
 <body>
 
-<?php require_once 'nav_top.php'; ?>
+<?= $this->insert('nav_top') ?>
 
 <div class="page-layout">
 
     <aside class="left-column">
 
         <div class="navigation-box">
-			<?php require_once 'nav_side.php'; ?>
+            <?= $this->insert('nav_side') ?>
         </div>
 
         <div class="widget-box">
@@ -39,7 +38,7 @@
     </aside>
 
     <main class="content-box">
-		<?= $content ?>
+        <?= $this->section('content') ?>
     </main>
 
 </div>
