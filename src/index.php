@@ -24,71 +24,72 @@ $router->setBasePath($basePath);
 $plates->addData([
 	'router' => $router,
 	'basePath' => $basePath
+
 ]);
 
 // This is a route mapping. We will have a bunch of these
 $router->map('GET', '', function () {
-	global $router, $basePath, $plates;
+	global $plates;
 	echo $plates->render('landing');
 }, 'landing');
 
 $router->map('GET', 'notifications', function () {
-	global $router, $basePath, $plates;
+	global $plates;
 	echo $plates->render('notifications');
 }, 'view_notifications');
 
 $router->map('GET', 'support', function () {
-	global $router, $basePath, $plates;
+	global $plates;
 	echo $plates->render('support');
 }, 'support');
 
 $router->map('GET', 'forum/', function () {
-	global $router, $basePath, $plates;
+	global $plates;
 	echo $plates->render('forum/index');
 }, 'forum_index');
 
 $router->map('GET', 'macros/', function () {
-	global $router, $basePath, $plates;
+	global $plates;
 	echo $plates->render('macros/index');
 }, 'macros_index');
 
 $router->map('GET', 'mealplan/', function () {
-	global $router, $basePath, $plates;
+	global $plates;
 	echo $plates->render('mealplan/index');
 }, 'mealplan_index');
 
 $router->map('GET', 'measurements/', function () {
-	global $router, $basePath, $plates;
+	global $plates;
 	echo $plates->render('measurements/index');
 }, 'measurements_index');
 
 $router->map('GET', 'message/', function () {
-	global $router, $basePath, $plates;
+	global $plates;
 	echo $plates->render('message/index');
 }, 'message_index');
 
 $router->map('GET', 'performance/', function () {
-	global $router, $basePath, $plates;
+	global $plates;
 	echo $plates->render('performance/view');
 }, 'performance_view');
 
 $router->map('GET', 'user/', function () {
-	global $router, $basePath, $plates;
+	global $plates;
 	echo $plates->render('user/view');
 }, 'user_view');
 
 $router->map('GET', 'login', function () {
-	global $router, $basePath, $plates;
+	global $plates;
 	echo $plates->render('user/login');
 }, 'login');
 
 $router->map('GET', 'dashboard', function () {
-	global $router, $basePath, $plates;
+	global $plates;
 	echo $plates->render('user/dashboard');
 }, 'dashboard');
 
 $router->map('GET', 'workoutplan/', function () {
-	global $router, $basePath, $plates;
+	global $plates;
 	echo $plates->render('workoutplan/index');
 }, 'workoutplan_index');
 
