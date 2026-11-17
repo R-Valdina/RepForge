@@ -183,6 +183,30 @@ This is just generic and here to give general framing of the screens for now
     text-align: center;
 }
 
+.workout-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.workout-navigation h1 {
+    margin: 0;
+}
+
+.workout-navigation a {
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.workout-navigation a,
+.workout-navigation a:visited,
+.workout-navigation a:hover,
+.workout-navigation a:active {
+    color: #000000;
+    text-decoration: none;
+}
+
 /* Mobile Layout
 When the screen is 600px wide or smaller:
 
