@@ -1,0 +1,752 @@
+[
+  {
+    "Id": 1,
+    "ExerciseId": 56,
+    "WorkoutPlanSectionId": 1,
+    "OrderInSection": 1,
+    "Sets": 1,
+    "Reps": 10,
+    "Weight": null,
+    "Duration": null
+  },
+  {
+    "Id": 2,
+    "ExerciseId": 57,
+    "WorkoutPlanSectionId": 1,
+    "OrderInSection": 2,
+    "Sets": 1,
+    "Reps": 10,
+    "Weight": null,
+    "Duration": null
+  },
+  {
+    "Id": 3,
+    "ExerciseId": 58,
+    "WorkoutPlanSectionId": 1,
+    "OrderInSection": 3,
+    "Sets": 1,
+    "Reps": 10,
+    "Weight": null,
+    "Duration": null
+  },
+  {
+    "Id": 4,
+    "ExerciseId": 69,
+    "WorkoutPlanSectionId": 1,
+    "OrderInSection": 4,
+    "Sets": 1,
+    "Reps": 10,
+    "Weight": null,
+    "Duration": null
+  },
+  {
+    "Id": 5,
+    "ExerciseId": 1,
+    "WorkoutPlanSectionId": 2,
+    "OrderInSection": 1,
+    "Sets": 3,
+    "Reps": 10,
+    "Weight": 70,
+    "Duration": null
+  },
+  {
+    "Id": 6,
+    "ExerciseId": 2,
+    "WorkoutPlanSectionId": 2,
+    "OrderInSection": 2,
+    "Sets": 3,
+    "Reps": 10,
+    "Weight": 80,
+    "Duration": null
+  },
+  {
+    "Id": 7,
+    "ExerciseId": 5,
+    "WorkoutPlanSectionId": 2,
+    "OrderInSection": 3,
+    "Sets": 3,
+    "Reps": 10,
+    "Weight": 25,
+    "Duration": null
+  },
+  {
+    "Id": 8,
+    "ExerciseId": 4,
+    "WorkoutPlanSectionId": 3,
+    "OrderInSection": 1,
+    "Sets": 3,
+    "Reps": 10,
+    "Weight": 55,
+    "Duration": null
+  },
+  {
+    "Id": 9,
+    "ExerciseId": 6,
+    "WorkoutPlanSectionId": 3,
+    "OrderInSection": 2,
+    "Sets": 3,
+    "Reps": 10,
+    "Weight": 15,
+    "Duration": null
+  },
+  {
+    "Id": 10,
+    "ExerciseId": 8,
+    "WorkoutPlanSectionId": 4,
+    "OrderInSection": 1,
+    "Sets": 3,
+    "Reps": 10,
+    "Weight": 35,
+    "Duration": null
+  },
+  {
+    "Id": 11,
+    "ExerciseId": 9,
+    "WorkoutPlanSectionId": 4,
+    "OrderInSection": 2,
+    "Sets": 3,
+    "Reps": 10,
+    "Weight": 30,
+    "Duration": null
+  },
+  {
+    "Id": 12,
+    "ExerciseId": 78,
+    "WorkoutPlanSectionId": 5,
+    "OrderInSection": 1,
+    "Sets": 1,
+    "Reps": null,
+    "Weight": null,
+    "Duration": 0.5
+  },
+  {
+    "Id": 13,
+    "ExerciseId": 79,
+    "WorkoutPlanSectionId": 5,
+    "OrderInSection": 2,
+    "Sets": 1,
+    "Reps": null,
+    "Weight": null,
+    "Duration": 0.5
+  },
+  {
+    "Id": 14,
+    "ExerciseId": 80,
+    "WorkoutPlanSectionId": 5,
+    "OrderInSection": 3,
+    "Sets": 1,
+    "Reps": null,
+    "Weight": null,
+    "Duration": 0.5
+  },
+  {
+    "Id": 15,
+    "ExerciseId": 82,
+    "WorkoutPlanSectionId": 6,
+    "OrderInSection": 1,
+    "Sets": 1,
+    "Reps": null,
+    "Weight": null,
+    "Duration": 5
+  },
+  {
+    "Id": 16,
+    "ExerciseId": 56,
+    "WorkoutPlanSectionId": 7,
+    "OrderInSection": 1,
+    "Sets": 1,
+    "Reps": 10,
+    "Weight": null,
+    "Duration": null
+  },
+  {
+    "Id": 17,
+    "ExerciseId": 57,
+    "WorkoutPlanSectionId": 7,
+    "OrderInSection": 2,
+    "Sets": 1,
+    "Reps": 10,
+    "Weight": null,
+    "Duration": null
+  },
+  {
+    "Id": 18,
+    "ExerciseId": 68,
+    "WorkoutPlanSectionId": 7,
+    "OrderInSection": 3,
+    "Sets": 1,
+    "Reps": 10,
+    "Weight": null,
+    "Duration": null
+  },
+  {
+    "Id": 19,
+    "ExerciseId": 69,
+    "WorkoutPlanSectionId": 7,
+    "OrderInSection": 4,
+    "Sets": 1,
+    "Reps": 10,
+    "Weight": null,
+    "Duration": null
+  },
+  {
+    "Id": 20,
+    "ExerciseId": 10,
+    "WorkoutPlanSectionId": 8,
+    "OrderInSection": 1,
+    "Sets": 3,
+    "Reps": 10,
+    "Weight": 85,
+    "Duration": null
+  },
+  {
+    "Id": 21,
+    "ExerciseId": 11,
+    "WorkoutPlanSectionId": 8,
+    "OrderInSection": 2,
+    "Sets": 3,
+    "Reps": 10,
+    "Weight": 75,
+    "Duration": null
+  },
+  {
+    "Id": 22,
+    "ExerciseId": 12,
+    "WorkoutPlanSectionId": 8,
+    "OrderInSection": 3,
+    "Sets": 3,
+    "Reps": 10,
+    "Weight": 70,
+    "Duration": null
+  },
+  {
+    "Id": 23,
+    "ExerciseId": 13,
+    "WorkoutPlanSectionId": 8,
+    "OrderInSection": 4,
+    "Sets": 3,
+    "Reps": 10,
+    "Weight": 75,
+    "Duration": null
+  },
+  {
+    "Id": 24,
+    "ExerciseId": 14,
+    "WorkoutPlanSectionId": 9,
+    "OrderInSection": 1,
+    "Sets": 3,
+    "Reps": 10,
+    "Weight": 50,
+    "Duration": null
+  },
+  {
+    "Id": 25,
+    "ExerciseId": 15,
+    "WorkoutPlanSectionId": 9,
+    "OrderInSection": 2,
+    "Sets": 3,
+    "Reps": 10,
+    "Weight": 35,
+    "Duration": null
+  },
+  {
+    "Id": 26,
+    "ExerciseId": 16,
+    "WorkoutPlanSectionId": 10,
+    "OrderInSection": 1,
+    "Sets": 3,
+    "Reps": 10,
+    "Weight": 30,
+    "Duration": null
+  },
+  {
+    "Id": 27,
+    "ExerciseId": 18,
+    "WorkoutPlanSectionId": 10,
+    "OrderInSection": 2,
+    "Sets": 3,
+    "Reps": 10,
+    "Weight": 30,
+    "Duration": null
+  },
+  {
+    "Id": 28,
+    "ExerciseId": 81,
+    "WorkoutPlanSectionId": 11,
+    "OrderInSection": 1,
+    "Sets": 1,
+    "Reps": null,
+    "Weight": null,
+    "Duration": 0.5
+  },
+  {
+    "Id": 29,
+    "ExerciseId": 79,
+    "WorkoutPlanSectionId": 11,
+    "OrderInSection": 2,
+    "Sets": 1,
+    "Reps": null,
+    "Weight": null,
+    "Duration": 0.5
+  },
+  {
+    "Id": 30,
+    "ExerciseId": 82,
+    "WorkoutPlanSectionId": 12,
+    "OrderInSection": 1,
+    "Sets": 1,
+    "Reps": null,
+    "Weight": null,
+    "Duration": 5
+  },
+  {
+    "Id": 31,
+    "ExerciseId": 59,
+    "WorkoutPlanSectionId": 13,
+    "OrderInSection": 1,
+    "Sets": 1,
+    "Reps": 10,
+    "Weight": null,
+    "Duration": null
+  },
+  {
+    "Id": 32,
+    "ExerciseId": 60,
+    "WorkoutPlanSectionId": 13,
+    "OrderInSection": 2,
+    "Sets": 1,
+    "Reps": 10,
+    "Weight": null,
+    "Duration": null
+  },
+  {
+    "Id": 33,
+    "ExerciseId": 61,
+    "WorkoutPlanSectionId": 13,
+    "OrderInSection": 3,
+    "Sets": 1,
+    "Reps": 10,
+    "Weight": null,
+    "Duration": null
+  },
+  {
+    "Id": 34,
+    "ExerciseId": 62,
+    "WorkoutPlanSectionId": 13,
+    "OrderInSection": 4,
+    "Sets": 1,
+    "Reps": 10,
+    "Weight": null,
+    "Duration": null
+  },
+  {
+    "Id": 35,
+    "ExerciseId": 67,
+    "WorkoutPlanSectionId": 14,
+    "OrderInSection": 1,
+    "Sets": 1,
+    "Reps": 10,
+    "Weight": null,
+    "Duration": null
+  },
+  {
+    "Id": 36,
+    "ExerciseId": 70,
+    "WorkoutPlanSectionId": 14,
+    "OrderInSection": 2,
+    "Sets": 1,
+    "Reps": 10,
+    "Weight": null,
+    "Duration": null
+  },
+  {
+    "Id": 37,
+    "ExerciseId": 33,
+    "WorkoutPlanSectionId": 15,
+    "OrderInSection": 1,
+    "Sets": 3,
+    "Reps": 10,
+    "Weight": 120,
+    "Duration": null
+  },
+  {
+    "Id": 38,
+    "ExerciseId": 26,
+    "WorkoutPlanSectionId": 15,
+    "OrderInSection": 2,
+    "Sets": 3,
+    "Reps": 10,
+    "Weight": 90,
+    "Duration": null
+  },
+  {
+    "Id": 39,
+    "ExerciseId": 24,
+    "WorkoutPlanSectionId": 15,
+    "OrderInSection": 3,
+    "Sets": 3,
+    "Reps": 10,
+    "Weight": 85,
+    "Duration": null
+  },
+  {
+    "Id": 40,
+    "ExerciseId": 19,
+    "WorkoutPlanSectionId": 16,
+    "OrderInSection": 1,
+    "Sets": 3,
+    "Reps": 10,
+    "Weight": 140,
+    "Duration": null
+  },
+  {
+    "Id": 41,
+    "ExerciseId": 20,
+    "WorkoutPlanSectionId": 16,
+    "OrderInSection": 2,
+    "Sets": 3,
+    "Reps": 10,
+    "Weight": 180,
+    "Duration": null
+  },
+  {
+    "Id": 42,
+    "ExerciseId": 73,
+    "WorkoutPlanSectionId": 17,
+    "OrderInSection": 1,
+    "Sets": 1,
+    "Reps": null,
+    "Weight": null,
+    "Duration": 0.5
+  },
+  {
+    "Id": 43,
+    "ExerciseId": 74,
+    "WorkoutPlanSectionId": 17,
+    "OrderInSection": 2,
+    "Sets": 1,
+    "Reps": null,
+    "Weight": null,
+    "Duration": 0.5
+  },
+  {
+    "Id": 44,
+    "ExerciseId": 77,
+    "WorkoutPlanSectionId": 17,
+    "OrderInSection": 3,
+    "Sets": 1,
+    "Reps": null,
+    "Weight": null,
+    "Duration": 0.5
+  },
+  {
+    "Id": 45,
+    "ExerciseId": 83,
+    "WorkoutPlanSectionId": 18,
+    "OrderInSection": 1,
+    "Sets": 1,
+    "Reps": null,
+    "Weight": null,
+    "Duration": 5
+  },
+  {
+    "Id": 46,
+    "ExerciseId": 59,
+    "WorkoutPlanSectionId": 19,
+    "OrderInSection": 1,
+    "Sets": 1,
+    "Reps": 10,
+    "Weight": null,
+    "Duration": null
+  },
+  {
+    "Id": 47,
+    "ExerciseId": 60,
+    "WorkoutPlanSectionId": 19,
+    "OrderInSection": 2,
+    "Sets": 1,
+    "Reps": 10,
+    "Weight": null,
+    "Duration": null
+  },
+  {
+    "Id": 48,
+    "ExerciseId": 63,
+    "WorkoutPlanSectionId": 19,
+    "OrderInSection": 3,
+    "Sets": 1,
+    "Reps": 10,
+    "Weight": null,
+    "Duration": null
+  },
+  {
+    "Id": 49,
+    "ExerciseId": 67,
+    "WorkoutPlanSectionId": 20,
+    "OrderInSection": 1,
+    "Sets": 1,
+    "Reps": 10,
+    "Weight": null,
+    "Duration": null
+  },
+  {
+    "Id": 50,
+    "ExerciseId": 71,
+    "WorkoutPlanSectionId": 20,
+    "OrderInSection": 2,
+    "Sets": 1,
+    "Reps": 10,
+    "Weight": null,
+    "Duration": null
+  },
+  {
+    "Id": 51,
+    "ExerciseId": 70,
+    "WorkoutPlanSectionId": 20,
+    "OrderInSection": 3,
+    "Sets": 1,
+    "Reps": 10,
+    "Weight": null,
+    "Duration": null
+  },
+  {
+    "Id": 52,
+    "ExerciseId": 34,
+    "WorkoutPlanSectionId": 21,
+    "OrderInSection": 1,
+    "Sets": 3,
+    "Reps": 10,
+    "Weight": 70,
+    "Duration": null
+  },
+  {
+    "Id": 53,
+    "ExerciseId": 25,
+    "WorkoutPlanSectionId": 21,
+    "OrderInSection": 2,
+    "Sets": 3,
+    "Reps": 10,
+    "Weight": 100,
+    "Duration": null
+  },
+  {
+    "Id": 54,
+    "ExerciseId": 27,
+    "WorkoutPlanSectionId": 21,
+    "OrderInSection": 3,
+    "Sets": 3,
+    "Reps": 10,
+    "Weight": 75,
+    "Duration": null
+  },
+  {
+    "Id": 55,
+    "ExerciseId": 29,
+    "WorkoutPlanSectionId": 22,
+    "OrderInSection": 1,
+    "Sets": 3,
+    "Reps": 10,
+    "Weight": 135,
+    "Duration": null
+  },
+  {
+    "Id": 56,
+    "ExerciseId": 32,
+    "WorkoutPlanSectionId": 22,
+    "OrderInSection": 2,
+    "Sets": 3,
+    "Reps": 10,
+    "Weight": 60,
+    "Duration": null
+  },
+  {
+    "Id": 57,
+    "ExerciseId": 21,
+    "WorkoutPlanSectionId": 22,
+    "OrderInSection": 3,
+    "Sets": 3,
+    "Reps": 10,
+    "Weight": 90,
+    "Duration": null
+  },
+  {
+    "Id": 58,
+    "ExerciseId": 72,
+    "WorkoutPlanSectionId": 23,
+    "OrderInSection": 1,
+    "Sets": 1,
+    "Reps": null,
+    "Weight": null,
+    "Duration": 0.5
+  },
+  {
+    "Id": 59,
+    "ExerciseId": 75,
+    "WorkoutPlanSectionId": 23,
+    "OrderInSection": 2,
+    "Sets": 1,
+    "Reps": null,
+    "Weight": null,
+    "Duration": 0.5
+  },
+  {
+    "Id": 60,
+    "ExerciseId": 77,
+    "WorkoutPlanSectionId": 23,
+    "OrderInSection": 3,
+    "Sets": 1,
+    "Reps": null,
+    "Weight": null,
+    "Duration": 0.5
+  },
+  {
+    "Id": 61,
+    "ExerciseId": 82,
+    "WorkoutPlanSectionId": 24,
+    "OrderInSection": 1,
+    "Sets": 1,
+    "Reps": null,
+    "Weight": null,
+    "Duration": 5
+  },
+  {
+    "Id": 62,
+    "ExerciseId": 56,
+    "WorkoutPlanSectionId": 25,
+    "OrderInSection": 1,
+    "Sets": 1,
+    "Reps": 10,
+    "Weight": null,
+    "Duration": null
+  },
+  {
+    "Id": 63,
+    "ExerciseId": 59,
+    "WorkoutPlanSectionId": 25,
+    "OrderInSection": 2,
+    "Sets": 1,
+    "Reps": 10,
+    "Weight": null,
+    "Duration": null
+  },
+  {
+    "Id": 64,
+    "ExerciseId": 60,
+    "WorkoutPlanSectionId": 25,
+    "OrderInSection": 3,
+    "Sets": 1,
+    "Reps": 10,
+    "Weight": null,
+    "Duration": null
+  },
+  {
+    "Id": 65,
+    "ExerciseId": 63,
+    "WorkoutPlanSectionId": 25,
+    "OrderInSection": 4,
+    "Sets": 1,
+    "Reps": 10,
+    "Weight": null,
+    "Duration": null
+  },
+  {
+    "Id": 66,
+    "ExerciseId": 87,
+    "WorkoutPlanSectionId": 26,
+    "OrderInSection": 1,
+    "Sets": 1,
+    "Reps": null,
+    "Weight": null,
+    "Duration": 30
+  },
+  {
+    "Id": 67,
+    "ExerciseId": 39,
+    "WorkoutPlanSectionId": 27,
+    "OrderInSection": 1,
+    "Sets": 3,
+    "Reps": 10,
+    "Weight": null,
+    "Duration": null
+  },
+  {
+    "Id": 68,
+    "ExerciseId": 40,
+    "WorkoutPlanSectionId": 27,
+    "OrderInSection": 2,
+    "Sets": 3,
+    "Reps": 10,
+    "Weight": null,
+    "Duration": null
+  },
+  {
+    "Id": 69,
+    "ExerciseId": 38,
+    "WorkoutPlanSectionId": 27,
+    "OrderInSection": 3,
+    "Sets": 3,
+    "Reps": null,
+    "Weight": null,
+    "Duration": 0.75
+  },
+  {
+    "Id": 70,
+    "ExerciseId": 72,
+    "WorkoutPlanSectionId": 28,
+    "OrderInSection": 1,
+    "Sets": 1,
+    "Reps": null,
+    "Weight": null,
+    "Duration": 0.5
+  },
+  {
+    "Id": 71,
+    "ExerciseId": 73,
+    "WorkoutPlanSectionId": 28,
+    "OrderInSection": 2,
+    "Sets": 1,
+    "Reps": null,
+    "Weight": null,
+    "Duration": 0.5
+  },
+  {
+    "Id": 72,
+    "ExerciseId": 74,
+    "WorkoutPlanSectionId": 28,
+    "OrderInSection": 3,
+    "Sets": 1,
+    "Reps": null,
+    "Weight": null,
+    "Duration": 0.5
+  },
+  {
+    "Id": 73,
+    "ExerciseId": 75,
+    "WorkoutPlanSectionId": 28,
+    "OrderInSection": 4,
+    "Sets": 1,
+    "Reps": null,
+    "Weight": null,
+    "Duration": 0.5
+  },
+  {
+    "Id": 74,
+    "ExerciseId": 81,
+    "WorkoutPlanSectionId": 28,
+    "OrderInSection": 5,
+    "Sets": 1,
+    "Reps": null,
+    "Weight": null,
+    "Duration": 0.5
+  },
+  {
+    "Id": 75,
+    "ExerciseId": 84,
+    "WorkoutPlanSectionId": 29,
+    "OrderInSection": 1,
+    "Sets": 1,
+    "Reps": null,
+    "Weight": null,
+    "Duration": 5
+  }
+]

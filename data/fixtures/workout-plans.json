@@ -1,0 +1,27 @@
+[
+  {
+    "Id": 1,
+    "UserId": 1,
+    "Title": "Push"
+  },
+  {
+    "Id": 2,
+    "UserId": 1,
+    "Title": "Pull"
+  },
+  {
+    "Id": 3,
+    "UserId": 1,
+    "Title": "Lower 1"
+  },
+  {
+    "Id": 4,
+    "UserId": 1,
+    "Title": "Lower 2"
+  },
+  {
+    "Id": 5,
+    "UserId": 1,
+    "Title": "Active Recovery"
+  }
+]

@@ -1,0 +1,176 @@
+[
+  {
+    "Id": 1,
+    "WorkoutPlanId": 1,
+    "Name": "Dynamic Warm Up",
+    "OrderInWorkoutPlan": 1
+  },
+  {
+    "Id": 2,
+    "WorkoutPlanId": 1,
+    "Name": "Chest",
+    "OrderInWorkoutPlan": 2
+  },
+  {
+    "Id": 3,
+    "WorkoutPlanId": 1,
+    "Name": "Shoulders",
+    "OrderInWorkoutPlan": 3
+  },
+  {
+    "Id": 4,
+    "WorkoutPlanId": 1,
+    "Name": "Triceps",
+    "OrderInWorkoutPlan": 4
+  },
+  {
+    "Id": 5,
+    "WorkoutPlanId": 1,
+    "Name": "Stretch",
+    "OrderInWorkoutPlan": 5
+  },
+  {
+    "Id": 6,
+    "WorkoutPlanId": 1,
+    "Name": "Cool Down",
+    "OrderInWorkoutPlan": 6
+  },
+  {
+    "Id": 7,
+    "WorkoutPlanId": 2,
+    "Name": "Dynamic Warm Up",
+    "OrderInWorkoutPlan": 1
+  },
+  {
+    "Id": 8,
+    "WorkoutPlanId": 2,
+    "Name": "Back",
+    "OrderInWorkoutPlan": 2
+  },
+  {
+    "Id": 9,
+    "WorkoutPlanId": 2,
+    "Name": "Rear Delts",
+    "OrderInWorkoutPlan": 3
+  },
+  {
+    "Id": 10,
+    "WorkoutPlanId": 2,
+    "Name": "Biceps",
+    "OrderInWorkoutPlan": 4
+  },
+  {
+    "Id": 11,
+    "WorkoutPlanId": 2,
+    "Name": "Stretch",
+    "OrderInWorkoutPlan": 5
+  },
+  {
+    "Id": 12,
+    "WorkoutPlanId": 2,
+    "Name": "Cool Down",
+    "OrderInWorkoutPlan": 6
+  },
+  {
+    "Id": 13,
+    "WorkoutPlanId": 3,
+    "Name": "Dynamic Warm Up",
+    "OrderInWorkoutPlan": 1
+  },
+  {
+    "Id": 14,
+    "WorkoutPlanId": 3,
+    "Name": "Activation",
+    "OrderInWorkoutPlan": 2
+  },
+  {
+    "Id": 15,
+    "WorkoutPlanId": 3,
+    "Name": "Isolation",
+    "OrderInWorkoutPlan": 3
+  },
+  {
+    "Id": 16,
+    "WorkoutPlanId": 3,
+    "Name": "Compound",
+    "OrderInWorkoutPlan": 4
+  },
+  {
+    "Id": 17,
+    "WorkoutPlanId": 3,
+    "Name": "Stretch",
+    "OrderInWorkoutPlan": 5
+  },
+  {
+    "Id": 18,
+    "WorkoutPlanId": 3,
+    "Name": "Cool Down",
+    "OrderInWorkoutPlan": 6
+  },
+  {
+    "Id": 19,
+    "WorkoutPlanId": 4,
+    "Name": "Dynamic Warm Up",
+    "OrderInWorkoutPlan": 1
+  },
+  {
+    "Id": 20,
+    "WorkoutPlanId": 4,
+    "Name": "Activation",
+    "OrderInWorkoutPlan": 2
+  },
+  {
+    "Id": 21,
+    "WorkoutPlanId": 4,
+    "Name": "Isolation",
+    "OrderInWorkoutPlan": 3
+  },
+  {
+    "Id": 22,
+    "WorkoutPlanId": 4,
+    "Name": "Compound",
+    "OrderInWorkoutPlan": 4
+  },
+  {
+    "Id": 23,
+    "WorkoutPlanId": 4,
+    "Name": "Stretch",
+    "OrderInWorkoutPlan": 5
+  },
+  {
+    "Id": 24,
+    "WorkoutPlanId": 4,
+    "Name": "Cool Down",
+    "OrderInWorkoutPlan": 6
+  },
+  {
+    "Id": 25,
+    "WorkoutPlanId": 5,
+    "Name": "Mobility Warm Up",
+    "OrderInWorkoutPlan": 1
+  },
+  {
+    "Id": 26,
+    "WorkoutPlanId": 5,
+    "Name": "Light Cardio",
+    "OrderInWorkoutPlan": 2
+  },
+  {
+    "Id": 27,
+    "WorkoutPlanId": 5,
+    "Name": "Core & Stability",
+    "OrderInWorkoutPlan": 3
+  },
+  {
+    "Id": 28,
+    "WorkoutPlanId": 5,
+    "Name": "Full Body Stretch",
+    "OrderInWorkoutPlan": 4
+  },
+  {
+    "Id": 29,
+    "WorkoutPlanId": 5,
+    "Name": "Cool Down",
+    "OrderInWorkoutPlan": 5
+  }
+]
