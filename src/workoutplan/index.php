@@ -11,6 +11,9 @@ require_once dirname(__DIR__) . '/fixture_loader.php';
 
 // Load the available workout plans
 $plans = loadFixture('workout-plans');
+$sections = loadFixture('workout-plan-sections');
+$workoutExercises = loadFixture('workout-exercises');
+$exercises = loadFixture('exercises');
 
 // Read the selected workout ID from the URL
 $requestedPlanId = filter_input(
@@ -51,6 +54,20 @@ if ($selectedIndex !== null) {
     $previousPlan = $plans[$previousIndex];
     $nextPlan = $plans[$nextIndex];
 }
+$planSections = [];
+
+if ($plan !== null) {
+    foreach ($sections as $section) {
+        if ($section['WorkoutPlanId'] === $plan['Id']) {
+            $planSections[] = $section;
+        }
+    }
+
+    usort($planSections, function ($a, $b) {
+        return $a['OrderInWorkoutPlan']
+                <=> $b['OrderInWorkoutPlan'];
+    });
+}
 ?>
 
 
@@ -75,6 +92,21 @@ if ($selectedIndex !== null) {
            aria-label="Next workout plan">
             &#10095;
         </a>
+
+    </div>
+    <div class="workout-body">
+
+        <?php foreach ($planSections as $section): ?>
+
+            <h3>
+                <?= htmlspecialchars(
+                        $section['Name'],
+                        ENT_QUOTES,
+                        'UTF-8'
+                ) ?>
+            </h3>
+
+        <?php endforeach; ?>
 
     </div>
 
