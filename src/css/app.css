@@ -207,6 +207,42 @@ This is just generic and here to give general framing of the screens for now
     text-decoration: none;
 }
 
+.workout-body {
+    padding: 5px 30px 30px;
+}
+
+.workout-exercises {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+.workout-exercises th,
+.workout-exercises td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+/** Alternates the rows background color */
+.workout-exercises tbody tr:nth-child(even) {
+    background-color: #f5f8fc;
+}
+
+.workout-exercises tbody tr:not(.workout-section) td:first-child {
+    padding-left: 40px;
+
+}
+
+/** makes the workout sections stand out against their exercises */
+.workout-exercises tbody tr.workout-section th {
+    font-weight: bold;
+    text-align: left;
+    padding: 10px 12px;
+}
+
 /* Mobile Layout
 When the screen is 600px wide or smaller:
 

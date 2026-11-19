@@ -378,7 +378,7 @@ foreach ($planSections as $index => $section) {
                 </tr>
 
                 <!-- Loop through the exercises attached to this section. -->
-                <?php foreach ($section['Exercises'] as $exercise): ?>
+                <?php foreach ($section['Exercises'] as $index => $exercise): ?>
 
                     <!-- Create one table row for the current exercise. -->
                     <tr>
@@ -386,6 +386,7 @@ foreach ($planSections as $index => $section) {
                         <!-- Display the exercise name. -->
                         <!-- htmlspecialchars prevents text from being treated as HTML. -->
                         <td>
+                            <?= $index + 1 ?>.
                             <?= htmlspecialchars(
                                     (string)$exercise['Name'],
                                     ENT_QUOTES,
