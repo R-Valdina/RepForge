@@ -1,0 +1,86 @@
+[
+  {
+    "Id": 1,
+    "MealPlanId": 1,
+    "Name": "Breakfast",
+    "OrderInMealPlan": 1
+  },
+  {
+    "Id": 2,
+    "MealPlanId": 1,
+    "Name": "Lunch",
+    "OrderInMealPlan": 2
+  },
+  {
+    "Id": 3,
+    "MealPlanId": 1,
+    "Name": "Pre-Workout",
+    "OrderInMealPlan": 3
+  },
+  {
+    "Id": 4,
+    "MealPlanId": 1,
+    "Name": "Dinner",
+    "OrderInMealPlan": 4
+  },
+  {
+    "Id": 5,
+    "MealPlanId": 1,
+    "Name": "Snack",
+    "OrderInMealPlan": 5
+  },
+  {
+    "Id": 6,
+    "MealPlanId": 2,
+    "Name": "Breakfast",
+    "OrderInMealPlan": 1
+  },
+  {
+    "Id": 7,
+    "MealPlanId": 2,
+    "Name": "Lunch",
+    "OrderInMealPlan": 2
+  },
+  {
+    "Id": 8,
+    "MealPlanId": 2,
+    "Name": "Pre-Workout",
+    "OrderInMealPlan": 3
+  },
+  {
+    "Id": 9,
+    "MealPlanId": 2,
+    "Name": "Dinner",
+    "OrderInMealPlan": 4
+  },
+  {
+    "Id": 10,
+    "MealPlanId": 2,
+    "Name": "Snack",
+    "OrderInMealPlan": 5
+  },
+  {
+    "Id": 11,
+    "MealPlanId": 3,
+    "Name": "Breakfast",
+    "OrderInMealPlan": 1
+  },
+  {
+    "Id": 12,
+    "MealPlanId": 3,
+    "Name": "Lunch",
+    "OrderInMealPlan": 2
+  },
+  {
+    "Id": 13,
+    "MealPlanId": 3,
+    "Name": "Dinner",
+    "OrderInMealPlan": 3
+  },
+  {
+    "Id": 14,
+    "MealPlanId": 3,
+    "Name": "Snack",
+    "OrderInMealPlan": 4
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "Id": 1,
+    "UserId": 1,
+    "Title": "Training Day"
+  },
+  {
+    "Id": 2,
+    "UserId": 1,
+    "Title": "Lower Day High Carb"
+  },
+  {
+    "Id": 3,
+    "UserId": 1,
+    "Title": "Active Recovery Day"
+  }
+]
